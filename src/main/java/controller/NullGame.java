@@ -7,7 +7,12 @@ import logic.table.NullGameTable;
 import logic.table.Table;
 
 import java.util.List;
-
+/**
+ * null game object will null metos implementations, must be inizialised in classes that
+ * need to inizialise a game
+ *
+ * @author David de la puente
+ */
 public class NullGame implements IGame {
     @Override
     public boolean isPlayableTable() {
