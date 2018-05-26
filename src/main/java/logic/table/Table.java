@@ -1,5 +1,6 @@
 package logic.table;
 
+import controller.Game;
 import logic.gameelements.bumper.Bumper;
 import logic.gameelements.target.Target;
 
@@ -62,4 +63,14 @@ public interface Table {
      * @return true if the table is playable, false otherwise
      */
     boolean isPlayableTable();
+
+    void makePlayable();
+
+    int getNumberOfBumpers();
+
+    double getProp();
+
+    void setGame(Game game);
+
+    void increseDroppedDropTargets();
 }

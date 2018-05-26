@@ -1,6 +1,8 @@
 package logic.gameelements.bumper;
 
+import controller.Game;
 import logic.gameelements.Hittable;
+import logic.gameelements.bumper.bumpermode.BumperMode;
 
 /**
  * Interface that represents operations related to a bumper behavior.
@@ -33,4 +35,8 @@ public interface Bumper extends Hittable {
      * Downgrades a bumper making {@link #isUpgraded()} return false.
      */
     void downgrade();
+
+    void setGame(Game game);
+
+    BumperMode getBumperMode();
 }

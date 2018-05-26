@@ -1,5 +1,6 @@
 package logic.gameelements.target;
 
+import controller.Game;
 import logic.gameelements.Hittable;
 
 /**
@@ -21,4 +22,6 @@ public interface Target extends Hittable {
      * Resets the state of a target making it active again.
      */
     void reset();
+
+    void setGame(Game game);
 }
