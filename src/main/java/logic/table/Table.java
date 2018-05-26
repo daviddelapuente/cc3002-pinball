@@ -66,11 +66,9 @@ public interface Table {
 
     void makePlayable();
 
-    int getNumberOfBumpers();
-
-    double getProp();
-
     void setGame(Game game);
 
     void increseDroppedDropTargets();
+
+    Game getGame();
 }

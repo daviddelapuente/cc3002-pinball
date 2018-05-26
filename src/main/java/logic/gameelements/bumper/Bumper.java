@@ -36,7 +36,19 @@ public interface Bumper extends Hittable {
      */
     void downgrade();
 
+    /**
+     * set the game parameter in an abstractBumper (double thispatch)
+     * so then the bumper can message the game that has to triggar a bonus
+     * @param game the game controller object
+     */
     void setGame(Game game);
 
+    /**
+     * return the the mode of a bumper (if is upgrade or not)
+     * the modes has the information of the score of the bumper
+     * @see logic.gameelements.bumper.bumpermode
+     */
     BumperMode getBumperMode();
+
+    void bonusOfHit();
 }

@@ -5,32 +5,16 @@ import logic.gameelements.target.Target;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-public class testDropTarget {
-    private Target dropTarget;
-
+public class testDropTarget extends testTargets{
     @Before
     public void setUp() {
-        dropTarget = new DropTarget();
+        this.target = new DropTarget();
     }
 
     @Test
     public void testGetScore() {
-        assertTrue(dropTarget.getScore()==100);
-    }
-
-    @Test
-    public void testIsActive() {
-        assertTrue(dropTarget.isActive());
-        dropTarget.hit();
-        assertFalse(dropTarget.isActive());
-        dropTarget.hit();
-        assertFalse(dropTarget.isActive());
-        dropTarget.reset();
-        assertTrue(dropTarget.isActive());
-        dropTarget.reset();
-        assertTrue(dropTarget.isActive());
+        assertTrue(this.target.getScore()==100);
     }
 }

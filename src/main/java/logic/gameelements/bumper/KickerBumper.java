@@ -5,11 +5,18 @@ import controller.visitor.Visitor;
 import controller.visitor.VisitorKickerBumper;
 import logic.gameelements.bumper.bumpermode.BumperModeNotUpgrade;
 import logic.gameelements.bumper.bumpermode.BumperModeUpgrade;
-
-import java.util.Random;
-
+/**
+ * this class extendes the abstractBumper but this metods are unique to this class
+ *
+ * @author David de la puente
+ */
 public class KickerBumper extends AbstractBumper{
 
+    /**
+     * this is the constructor, set the variables
+     * game start as nullGame
+     * and the bumper modes are inicialized
+     */
     public KickerBumper(){
         this.game=new NullGame();
         this.hitsToUpgrade=5;
@@ -19,10 +26,19 @@ public class KickerBumper extends AbstractBumper{
         this.bumperMode=bmnu;
     }
 
+    /**
+     * this metod tells the visitor that the object that send the message is a kick bumper (double dispatch)
+     * @param visitor a KickBumperVisitor
+     */
     public void accept(Visitor visitor) {
         visitor.visitKickerBumper(this);
     }
 
+    /**
+     * Alredy explained in the hittable interface
+     * particular in this class, this migth trigger an extraBall Bonus from the game
+     * @return 0
+     */
     @Override
     public int hit() {
         if(this.remainingHitsToUpgrade()>0){
@@ -35,17 +51,13 @@ public class KickerBumper extends AbstractBumper{
         this.accept(v);
         notifyObservers(v);
 
-        if(this.remainingHitsToUpgrade()==0&&!this.isUpgraded()){
-            Random generetor = new Random(900000);
-            double a=generetor.nextDouble();
-            if(a<=0.1){
-                this.game.triggerGetExtraBallBonus();
-            }
-            this.upgrade();
-        }
+        this.bonusOfHit();
         return 0;
     }
 
+    /**
+     * set the variable hits to upgrade to 5
+     */
     @Override
     public void resetHitsToUpgrade(){
         this.hitsToUpgrade=5;

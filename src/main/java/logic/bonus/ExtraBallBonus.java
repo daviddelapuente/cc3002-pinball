@@ -16,7 +16,7 @@ public class ExtraBallBonus implements Bonus{
 
     @Override
     public void trigger(Game game) {
-        this.timesTriggered=+1;
+        this.timesTriggered+=1;
         game.addBall();
     }
 }

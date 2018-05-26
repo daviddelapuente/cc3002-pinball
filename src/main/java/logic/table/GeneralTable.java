@@ -58,16 +58,6 @@ public class GeneralTable extends Observable implements Observer,Table {
     }
 
     @Override
-    public int getNumberOfBumpers(){
-        return 0;
-    }
-
-    @Override
-    public double getProp() {
-        return 0;
-    }
-
-    @Override
     public void update(Observable o, Object arg) {
 
     }
@@ -77,6 +67,11 @@ public class GeneralTable extends Observable implements Observer,Table {
     @Override
     public void increseDroppedDropTargets() {
         this.currentlyDroppedDropTargets+=1;
+    }
+
+    @Override
+    public Game getGame() {
+        return this.game;
     }
 
 }

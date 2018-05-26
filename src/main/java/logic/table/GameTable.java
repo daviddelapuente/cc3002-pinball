@@ -95,7 +95,8 @@ public class GameTable extends GeneralTable{
 
     @Override
     public void resetDropTargets() {
-        for(int i=0;i<this.numberOfDropTargets;i++){
+        int numberOfTargets=this.numberOfSpotTargets+this.numberOfDropTargets;
+        for(int i=this.numberOfSpotTargets;i<numberOfTargets;i++){
             targets.get(i).reset();
         }
     }
@@ -110,16 +111,6 @@ public class GameTable extends GeneralTable{
     @Override
     public boolean isPlayableTable() {
         return isPlayable;
-    }
-
-    @Override
-    public int getNumberOfBumpers(){
-        return this.numberOfBumpers;
-    }
-
-    @Override
-    public double getProp() {
-        return this.prob;
     }
 
     public void makePlayable(){

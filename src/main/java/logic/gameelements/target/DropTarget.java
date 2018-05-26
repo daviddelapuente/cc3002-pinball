@@ -6,9 +6,7 @@ import controller.visitor.VisitorDropTarget;
 
 import java.util.Random;
 
-public class DropTarget extends AbstractTarget implements Target {
-    private int numberOfDropTargets;
-
+public class DropTarget extends AbstractTarget implements Target { private int numberOfDropTargets;
     public DropTarget(){
         this.isActive=true;
         this.game=new NullGame();
@@ -40,7 +38,7 @@ public class DropTarget extends AbstractTarget implements Target {
             this.accept(v);
             notifyObservers(v);
 
-            if (game.getCurrentTable().getCurrentlyDroppedDropTargets()==this.numberOfDropTargets){
+            if (game.getCurrentTable().getCurrentlyDroppedDropTargets()==game.getCurrentTable().getNumberOfDropTargets()){
                 this.game.triggerDropTargetBonus();
             }
         }
