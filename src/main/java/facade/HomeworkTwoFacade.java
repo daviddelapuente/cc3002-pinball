@@ -139,7 +139,7 @@ public class HomeworkTwoFacade {
      * @see Table
      */
     public Table getCurrentTable() {
-        return null;
+        return game.getCurrentTable();
     }
 
     /**
@@ -148,7 +148,7 @@ public class HomeworkTwoFacade {
      * @param newTable the new table
      */
     public void setGameTable(Table newTable) {
-
+        game.setGameTable(newTable);
     }
 
     /**
@@ -157,7 +157,8 @@ public class HomeworkTwoFacade {
      * @return the new number of available balls
      */
     public int dropBall() {
-        return 0;
+        game.dropBall();
+        return game.getAvailableBalls();
     }
 
     /**
@@ -166,6 +167,6 @@ public class HomeworkTwoFacade {
      * @return true if the game is over, false otherwise
      */
     public boolean gameOver() {
-        return false;
+        return game.gameOver();
     }
 }
