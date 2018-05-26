@@ -7,7 +7,11 @@ import logic.gameelements.target.Target;
 import java.util.List;
 import java.util.Observable;
 import java.util.Observer;
-
+/**
+ * class that represent a table (null or gameTable)
+ *should be implementated in game clases
+ * @author David de la puente
+ */
 public class GeneralTable extends Observable implements Observer,Table {
     protected Game game;
     protected int currentlyDroppedDropTargets;
@@ -57,6 +61,11 @@ public class GeneralTable extends Observable implements Observer,Table {
 
     }
 
+    /**
+     * this metod is called when the observable objetc, makes notiications
+     * @param o is the object that notify
+     * @param arg the informacion traspased
+     */
     @Override
     public void update(Observable o, Object arg) {
 

@@ -1,5 +1,11 @@
 package logic.gameelements.bumper.bumpermode;
 
+/**
+ * Abstract Class that has the atributes an common metods of bumperModes
+ *
+ * @author David de la puent
+ */
+
 public abstract class AbstractBumperMode implements BumperMode {
     protected int score;
 

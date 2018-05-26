@@ -1,21 +1,25 @@
 package logic.bonus;
 
 import controller.Game;
-
-import java.util.Observable;
-
-public class JackPotBonus extends Observable implements Bonus {
-    private int timesTriggered;
-
+/**
+ * this class extendes the abstracTarget but this metods are unique to this class
+ *
+ * @author David de la puente
+ */
+public class JackPotBonus extends AbstractBonus implements Bonus {
+    /**
+     * this is the constructor, set the variables
+     * timesTrigered to 0
+     */
     public JackPotBonus(){
         this.timesTriggered=0;
     }
 
-    @Override
-    public int timesTriggered() {
-        return this.timesTriggered;
-    }
-
+    /**
+     * this metod define the action of trigger a JackPotBonus, sending
+     * a message to the game, whit the new score
+     * @param game the game controller object
+     */
     @Override
     public void trigger(Game game) {
         this.timesTriggered+=1;

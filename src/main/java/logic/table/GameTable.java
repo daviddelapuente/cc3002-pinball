@@ -11,6 +11,12 @@ import logic.gameelements.target.Target;
 
 import java.util.*;
 
+/**
+ * this class is a normal table that the driver is suposed to use
+ * so every game class should implement this class
+ *
+ * @author David de la puente
+ */
 public class GameTable extends GeneralTable{
     private boolean isPlayable=false;
     private String name;
@@ -25,6 +31,69 @@ public class GameTable extends GeneralTable{
     private List<Bumper> bumpers;
     private List<Target> targets;
 
+    /**
+     * the constructor, that resive the initial parameters, and a seed, the seed make the random things, pseudo random
+     * so this class can be tested
+     * @param  name the name off the table
+     * @param numberOfBumpers how many bumpers
+     * @param prob the probabilty of the PopBumpers
+     * @param numberOfSpotTargets cuantity of spot
+     * @param numberOfDropTargets cuantity of Drop
+     * @param seed the sed of the random generator
+     */
+    public GameTable(String name,int numberOfBumpers, double prob, int numberOfSpotTargets, int numberOfDropTargets, int seed){
+        this.name=name;
+        this.numberOfBumpers=numberOfBumpers;
+
+        this.numberOfSpotTargets=numberOfSpotTargets;
+        this.numberOfDropTargets=numberOfDropTargets;
+        this.prob=prob;
+
+        this.currentlyDroppedDropTargets=0;
+        this.bumpers=new ArrayList<>();
+        this.targets=new ArrayList<>();
+
+
+        Random generator = new Random(seed);
+        double a;
+        for (int i=0;i<this.numberOfBumpers;i++){
+            a=generator.nextDouble();
+            if(a<=prob){
+                Bumper b=new PopBumper();
+                ((PopBumper) b).addObserver((Observer) this);
+                this.bumpers.add(b);
+
+            }else{
+                Bumper b=new KickerBumper();
+                ((KickerBumper) b).addObserver((Observer) this);
+                this.bumpers.add(b);
+            }
+        }
+
+        for(int i=0;i<numberOfSpotTargets;i++){
+            Target t=new SpotTarget();
+            ((SpotTarget) t).addObserver((Observer) this);
+            this.targets.add(t);
+        }
+        int numberOfTargets=numberOfDropTargets+numberOfSpotTargets;
+        for(int i=numberOfSpotTargets;i<numberOfTargets;i++){
+            Target t= new DropTarget();
+            ((DropTarget) t).addObserver((Observer) this);
+            ((DropTarget)t).setNumberOfDropTargets(this.numberOfDropTargets);
+            this.targets.add(t);
+        }
+    }
+
+
+    /**
+     * the constructor, that resive the initial parameters but dont have a seed so this is random
+     * it cant be deterministic tested
+     * @param  name the name off the table
+     * @param numberOfBumpers how many bumpers
+     * @param prob the probabilty of the PopBumpers
+     * @param numberOfSpotTargets cuantity of spot
+     * @param numberOfDropTargets cuantity of Drop
+     */
     public GameTable(String name,int numberOfBumpers, double prob, int numberOfSpotTargets, int numberOfDropTargets){
         this.name=name;
         this.numberOfBumpers=numberOfBumpers;
@@ -38,7 +107,7 @@ public class GameTable extends GeneralTable{
         this.targets=new ArrayList<>();
 
 
-        Random generator = new Random(0);
+        Random generator = new Random();
         double a;
         for (int i=0;i<this.numberOfBumpers;i++){
             a=generator.nextDouble();
@@ -128,6 +197,12 @@ public class GameTable extends GeneralTable{
         notifyObservers(pts);
     }
 
+    /**
+     * this metod set The game in every bumper and target, so them
+     * can send the respective information to the bonus
+     * @see logic.bonus
+     * @param game the current game
+     */
     public void setGame(Game game){
         this.game=game;
         for(Bumper b :bumpers){

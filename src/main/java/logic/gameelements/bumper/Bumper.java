@@ -50,5 +50,15 @@ public interface Bumper extends Hittable {
      */
     BumperMode getBumperMode();
 
+    /**
+     * this metod is in charge to probably trigger a bonus
+     * but it has a random seed, so is testable
+     */
+    void bonusOfHit(int seed);
+
+    /**
+     * this metod is the same that the last but is random so it
+     * cant be tested
+     */
     void bonusOfHit();
 }

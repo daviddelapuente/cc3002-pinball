@@ -55,6 +55,22 @@ public class KickerBumper extends AbstractBumper{
         return 0;
     }
 
+    @Override
+    public int hit(int seed) {
+        if(this.remainingHitsToUpgrade()>0){
+            this.hitsToUpgrade-=1;
+        }
+
+        setChanged();
+
+        Visitor v = new VisitorKickerBumper();
+        this.accept(v);
+        notifyObservers(v);
+
+        this.bonusOfHit(seed);
+        return 0;
+    }
+
     /**
      * set the variable hits to upgrade to 5
      */

@@ -1,19 +1,26 @@
 package logic.bonus;
 
 import controller.Game;
+/**
+ * this class extendes the abstracTarget but this metods are unique to this class
+ *
+ * @author David de la puente
+ */
+public class ExtraBallBonus extends AbstractBonus implements Bonus{
 
-public class ExtraBallBonus implements Bonus{
-    private int timesTriggered;
-
+    /**
+     * this is the constructor, set the variables
+     * timesTrigered to 0
+     */
     public ExtraBallBonus(){
         this.timesTriggered=0;
     }
 
-    @Override
-    public int timesTriggered() {
-        return this.timesTriggered;
-    }
-
+    /**
+     * this metod define the action of trigger an ExtraBall bonus, adding a ball
+     * to the game
+     * @param game the game controller object
+     */
     @Override
     public void trigger(Game game) {
         this.timesTriggered+=1;

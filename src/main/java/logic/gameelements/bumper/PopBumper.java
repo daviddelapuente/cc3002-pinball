@@ -56,6 +56,22 @@ public class PopBumper extends AbstractBumper{
         return 0;
     }
 
+    @Override
+    public int hit(int seed) {
+        if(this.remainingHitsToUpgrade()>0){
+            this.hitsToUpgrade-=1;
+        }
+
+        setChanged();
+        Visitor v=new VisitorPopBumper();
+        this.accept(v);
+
+        notifyObservers(v);
+
+        this.bonusOfHit(seed);
+        return 0;
+    }
+
     /**
      * set the variable hits to upgrade to 3
      */

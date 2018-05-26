@@ -26,21 +26,10 @@ public abstract class AbstractBumper extends Observable implements Bumper{
     protected BumperModeUpgrade bmu;
     protected IGame game;
 
-    /**
-     * it should be used in hit() to know if a Bumper need to upgrade
-     *
-     * @return the number of hits that this class needs to upgrade
-     */
     @Override
     public int remainingHitsToUpgrade() {
         return this.hitsToUpgrade;
     }
-
-    /**
-     * defines is a bumper is upgrade or not
-     * it should be used in hit()
-     * @return if a bumper is alredy upgrade
-     */
     @Override
     public boolean isUpgraded() {
         return this.bumperMode.getIsUpgrade();
@@ -66,20 +55,16 @@ public abstract class AbstractBumper extends Observable implements Bumper{
     }
 
     /**
-     * this metod change the variable hits to upgrade to the incial value of this variable
+     * reset to 0 the remaining hits to upgrade
      */
     protected abstract void resetHitsToUpgrade();
 
-    /**
-     * explained in the hittable interface
-     * @return
-     */
     @Override
     public abstract int hit();
 
-    /**
-     * @return the score of the actual game
-     */
+    @Override
+    public abstract int hit(int seed);
+
     @Override
     public int getScore() {
         return this.bumperMode.getScore();
@@ -95,20 +80,26 @@ public abstract class AbstractBumper extends Observable implements Bumper{
         this.game=game;
     }
 
-    /**
-     * alredy explained in bumper interface
-     * @return the mode of a bumper
-     */
     public BumperMode getBumperMode(){
         return this.bumperMode;
     }
 
-    /**
-     * this metod is in charge to probably trigger a bonus
-     */
+    public void bonusOfHit(int seed){
+        if(this.remainingHitsToUpgrade()==0&&!this.isUpgraded()){
+
+            //seed=900000
+            Random generetor = new Random(900000);
+            double a=generetor.nextDouble();
+            if(a<=0.1){
+                this.game.triggerGetExtraBallBonus();
+            }
+            this.upgrade();
+        }
+    }
+
     public void bonusOfHit(){
         if(this.remainingHitsToUpgrade()==0&&!this.isUpgraded()){
-            Random generetor = new Random(900000);
+            Random generetor = new Random();
             double a=generetor.nextDouble();
             if(a<=0.1){
                 this.game.triggerGetExtraBallBonus();

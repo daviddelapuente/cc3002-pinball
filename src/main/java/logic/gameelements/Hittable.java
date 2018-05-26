@@ -19,6 +19,15 @@ public interface Hittable {
     int hit();
 
     /**
+     * Defines that an object have been hit.
+     * Implementations should consider the events that a hit to an object can trigger.
+     * this metod use a seed so the random objets can be tested
+     *
+     * @return the score the player obtained hitting the object
+     */
+    int hit(int seed);
+
+    /**
      * Defines that a hittable object has to have a score when it is hit.
      *
      * @return the current score of the object when hit
