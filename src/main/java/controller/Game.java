@@ -7,7 +7,6 @@ import logic.bonus.ExtraBallBonus;
 import logic.bonus.JackPotBonus;
 import logic.gameelements.bumper.Bumper;
 import logic.gameelements.target.Target;
-import logic.table.GeneralTable;
 import logic.table.NullGameTable;
 import logic.table.Table;
 
@@ -19,7 +18,7 @@ import java.util.Observer;
  *
  * @author David de la puente
  */
-public class Game implements IGame,Observer{
+public class Game implements Observer{
     private Table table;
     private Bonus dropTargetBonus;
     private ExtraBallBonus extraBallBonus;
@@ -41,14 +40,22 @@ public class Game implements IGame,Observer{
         this.table= new NullGameTable();
     }
 
-    @Override
+    /**
+     * @return if the table of the game is playable
+     */
+
     public boolean isPlayableTable(){
         return table.isPlayableTable();
     }
 
-    @Override
+    /**
+     * when a game is created is inicialized whit a null table
+     * so this metod, set the valeu of the table to the param
+     * @param newTable the new table
+     */
+
     public void setGameTable(Table newTable) {
-        GeneralTable t=(GeneralTable) newTable;
+        NullGameTable t=(NullGameTable) newTable;
         t.addObserver(this);
         this.table= t;
 
@@ -57,60 +64,86 @@ public class Game implements IGame,Observer{
         this.currentScore=0;
     }
 
-    @Override
+    /**
+     * @return the table name
+     */
+
     public String getTableName() {
         return table.getTableName();
     }
 
-    @Override
+    /**
+     * @return the actual table which is being played
+     */
     public Table getCurrentTable() {
         return this.table;
     }
 
-    @Override
+    /**
+     * @return the bumpers of the table
+     */
     public List<Bumper> getBumpers() {
         return table.getBumpers();
     }
 
-    @Override
+    /**
+     * @return the targets of the table
+     */
+
     public List<Target> getTargets() {
         return table.getTargets();
     }
 
-    @Override
+    /**
+     * @return the DropTargetBonus variable that has the game
+     */
     public Bonus getDropTargetBonus() {
         return this.dropTargetBonus;
     }
 
-    @Override
+    /**
+     * @return the ExtraBallBonusThat has the game
+     */
     public Bonus getExtraBallBonus() {
         return this.extraBallBonus;
     }
 
-    @Override
+    /**
+     * @return the jackPotBonus That has the game
+     */
     public Bonus getJackPotBonus() {
         return this.jackPotBonus;
     }
 
-    @Override
+    /**
+     * @return the number of balls that has the game
+     */
     public int getAvailableBalls() {
         return this.availableBalls;
     }
 
-    @Override
+    /**
+     * @return the score of the game
+     */
     public int getCurrentScore() {
         return this.currentScore;
     }
 
-    @Override
+    /**
+     * decreese in one the number of ballsavailable in the game
+     */
     public void dropBall() {
         this.availableBalls-=1;
     }
 
-    @Override
+    /**
+     * increese in one the numer of balls available in the game
+     */
     public void addBall(){this.availableBalls+=1;}
 
-    @Override
+    /**
+     * @return the state of the game, if the game ends, this will return true
+     */
     public boolean gameOver() {
         if (availableBalls<=0){
             return true;
@@ -125,22 +158,31 @@ public class Game implements IGame,Observer{
         v.makeTheMagic(this);
     }
 
-    @Override
+    /**
+     * trigger the extraBallBonus that the game has
+     */
     public void triggerGetExtraBallBonus(){
         this.extraBallBonus.trigger(this);
     }
 
-    @Override
+    /**
+     * trigger the jackPotBonus that the game has
+     */
     public void triggerJackPotBonus() {
         this.jackPotBonus.trigger(this);
     }
 
-    @Override
+    /**
+     * trigger the DropTargetBonus that the game has
+     */
     public void triggerDropTargetBonus() {
         this.dropTargetBonus.trigger(this);
     }
 
-    @Override
+    /**
+     * set the game score=score+i
+     * @param score the points
+     */
     public void plusScore(int score) {
         this.currentScore+=score;
     }

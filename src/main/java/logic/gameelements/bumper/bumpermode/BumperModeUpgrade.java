@@ -14,6 +14,9 @@ public class BumperModeUpgrade extends AbstractBumperMode {
         this.score=n;
     }
 
+    /**
+     * @return true because the mode is upgrade
+     */
     @Override
     public boolean getIsUpgrade(){
         return true;

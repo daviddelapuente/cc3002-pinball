@@ -1,8 +1,6 @@
 package controller.visitor;
 
 import controller.Game;
-import logic.bonus.DropTargetBonus;
-import logic.bonus.JackPotBonus;
 import logic.gameelements.bumper.KickerBumper;
 import logic.gameelements.bumper.PopBumper;
 import logic.gameelements.target.DropTarget;

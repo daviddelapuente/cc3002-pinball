@@ -15,7 +15,7 @@ import java.util.*;
  *
  * @author David de la puente
  */
-public class GameTable extends GeneralTable{
+public class GameTable extends NullGameTable {
     private boolean isPlayable=false;
     private String name;
 

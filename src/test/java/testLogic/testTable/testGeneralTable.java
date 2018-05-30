@@ -1,7 +1,6 @@
 package testLogic.testTable;
 
-import controller.Game;
-import logic.table.GeneralTable;
+import logic.table.NullGameTable;
 import logic.table.Table;
 import org.junit.Before;
 import org.junit.Test;
@@ -13,7 +12,7 @@ public class testGeneralTable {
     Table table;
     @Before
     public void setUp() {
-        table = new GeneralTable();
+        table = new NullGameTable();
     }
 
     @Test

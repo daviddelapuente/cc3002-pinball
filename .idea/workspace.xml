@@ -3,27 +3,28 @@
   <component name="ChangeListManager">
     <list default="true" id="57a28998-a905-42f7-b32a-ec7f1bafadde" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/IGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/IGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/NullGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/NullGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/IGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/NullGame.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/visitor/Visitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/visitor/Visitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorDropTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorDropTarget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorDropTargetBonus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorDropTargetBonus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorExtraBallBonus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorExtraBallBonus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorJackPotBonus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorJackPotBonus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorKickerBumper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorKickerBumper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorPopBumper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorPopBumper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorSpotTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorSpotTarget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/bonus/DropTargetBonus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/bonus/DropTargetBonus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/bonus/JackPotBonus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/bonus/JackPotBonus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/AbstractBumper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/AbstractBumper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/Bumper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/Bumper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/KickerBumper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/KickerBumper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/PopBumper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/PopBumper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/gameelements/target/AbstractTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/target/AbstractTarget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/gameelements/target/DropTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/target/DropTarget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/gameelements/target/SpotTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/target/SpotTarget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/gameelements/target/Target.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/target/Target.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/bumpermode/BumperMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/bumpermode/BumperMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/bumpermode/BumperModeNotUpgrade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/bumpermode/BumperModeNotUpgrade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/bumpermode/BumperModeUpgrade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/bumpermode/BumperModeUpgrade.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/logic/table/GameTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/table/GameTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/table/GeneralTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/table/GeneralTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/table/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/table/Table.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logic/table/GeneralTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/table/NullGameTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testController/testNullGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testLogic/testTable/testGeneralTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testLogic/testTable/testGeneralTable.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,66 +41,235 @@
     <SUITE FILE_PATH="coverage/pinball$testGame_testGetersSeed.ic" NAME="testGame.testGetersSeed Coverage Results" MODIFIED="1527644636743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>testController.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/pinball$All_in_pinball.ic" NAME="All in pinball Coverage Results" MODIFIED="1527644978620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/pinball$All_in_pinball.ic" NAME="All in pinball Coverage Results" MODIFIED="1527720001165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/pinball$testController_in_pinball.ic" NAME="testController in pinball Coverage Results" MODIFIED="1527306252693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>testController.*</FILTER>
     </SUITE>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GameTable.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/logic/table/GameTable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="126" column="41" lean-forward="true" selection-start-line="126" selection-start-column="41" selection-end-line="126" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GeneralTable.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/logic/table/GeneralTable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1073">
-              <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#532#533#0" expanded="true" />
-                <element signature="e#559#560#0" expanded="true" />
-                <element signature="e#616#617#0" expanded="true" />
-                <element signature="e#640#641#0" expanded="true" />
-                <element signature="e#705#706#0" expanded="true" />
-                <element signature="e#729#730#0" expanded="true" />
-                <element signature="e#783#784#0" expanded="true" />
-                <element signature="e#810#811#0" expanded="true" />
-                <element signature="e#864#865#0" expanded="true" />
-                <element signature="e#891#892#0" expanded="true" />
-                <element signature="e#1064#1065#0" expanded="true" />
-                <element signature="e#1092#1093#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Table.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/logic/table/Table.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="70" column="24" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NullGameTable.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/logic/table/NullGameTable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="22" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="22" />
+    <leaf>
+      <file leaf-file-name="JAVA/" pinned="false" current-in-tab="true">
+        <entry file="uml://JAVA/">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement />
+              <nodes>
+                <node x="1179.0" y="0.0">controller.Game</node>
+                <node x="772.0" y="699.0">logic.gameelements.target.SpotTarget</node>
+                <node x="408.16666666666663" y="378.0">logic.gameelements.bumper.AbstractBumper</node>
+                <node x="0.0" y="1499.0">controller.visitor.VisitorSpotTarget</node>
+                <node x="963.0" y="699.0">logic.gameelements.target.DropTarget</node>
+                <node x="260.0" y="1510.0">controller.visitor.VisitorExtraBallBonus</node>
+                <node x="408.16666666666663" y="145.0">logic.gameelements.bumper.Bumper</node>
+                <node x="1558.0" y="1510.0">controller.visitor.VisitorDropTargetBonus</node>
+                <node x="316.0" y="699.0">logic.gameelements.bumper.KickerBumper</node>
+                <node x="137.75" y="1059.0">logic.bonus.AbstractBonus</node>
+                <node x="186.5" y="936.0">logic.bonus.Bonus</node>
+                <node x="1294.0" y="1499.0">controller.visitor.VisitorDropTarget</node>
+                <node x="0.0" y="620.0">logic.table.GameTable</node>
+                <node x="378.0" y="1182.0">logic.bonus.DropTargetBonus</node>
+                <node x="496.0" y="1510.0">controller.visitor.VisitorJackPotBonus</node>
+                <node x="698.5" y="1059.0">logic.gameelements.bumper.bumpermode.AbstractBumperMode</node>
+                <node x="805.0" y="1182.0">logic.gameelements.bumper.bumpermode.BumperModeNotUpgrade</node>
+                <node x="645.3333333333333" y="0.0">logic.gameelements.Hittable</node>
+                <node x="592.0" y="1182.0">logic.gameelements.bumper.bumpermode.BumperModeUpgrade</node>
+                <node x="732.0" y="1278.0">controller.visitor.Visitor</node>
+                <node x="544.0" y="699.0">logic.gameelements.bumper.PopBumper</node>
+                <node x="732.0" y="1499.0">controller.visitor.VisitorKickerBumper</node>
+                <node x="1024.0" y="1499.0">controller.visitor.VisitorPopBumper</node>
+                <node x="871.0" y="455.0">logic.gameelements.target.AbstractTarget</node>
+                <node x="698.5" y="936.0">logic.gameelements.bumper.bumpermode.BumperMode</node>
+                <node x="189.0" y="1182.0">logic.bonus.JackPotBonus</node>
+                <node x="0.0" y="1182.0">logic.bonus.ExtraBallBonus</node>
+                <node x="0.0" y="299.0">logic.table.NullGameTable</node>
+                <node x="0.0" y="0.0">logic.table.Table</node>
+                <node x="869.8636363636364" y="200.0">logic.gameelements.target.Target</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="controller.visitor.VisitorKickerBumper" target="controller.visitor.Visitor">
+                  <point x="0.0" y="-36.5" />
+                  <point x="0.0" y="80.5" />
+                </edge>
+                <edge source="controller.visitor.VisitorDropTargetBonus" target="controller.visitor.Visitor">
+                  <point x="0.0" y="-25.5" />
+                  <point x="1666.0" y="1459.0" />
+                  <point x="984.5714285714286" y="1459.0" />
+                  <point x="116.57142857142856" y="80.5" />
+                </edge>
+                <edge source="logic.bonus.DropTargetBonus" target="logic.bonus.Bonus">
+                  <point x="42.25" y="-25.5" />
+                  <point x="504.75" y="1034.0" />
+                  <point x="338.75" y="1034.0" />
+                  <point x="65.25" y="36.5" />
+                </edge>
+                <edge source="logic.bonus.ExtraBallBonus" target="logic.bonus.Bonus">
+                  <point x="-42.25" y="-25.5" />
+                  <point x="42.25" y="1162.0" />
+                  <point x="52.28125" y="1162.0" />
+                  <point x="52.28125" y="1034.0" />
+                  <point x="208.25" y="1034.0" />
+                  <point x="-65.25" y="36.5" />
+                </edge>
+                <edge source="logic.table.GameTable" target="logic.table.NullGameTable">
+                  <point x="0.0" y="-135.5" />
+                  <point x="0.0" y="135.5" />
+                </edge>
+                <edge source="logic.gameelements.bumper.bumpermode.BumperModeNotUpgrade" target="logic.gameelements.bumper.bumpermode.AbstractBumperMode">
+                  <point x="0.0" y="-25.5" />
+                  <point x="901.5" y="1157.0" />
+                  <point x="843.25" y="1157.0" />
+                  <point x="48.25" y="36.5" />
+                </edge>
+                <edge source="logic.gameelements.bumper.PopBumper" target="logic.gameelements.bumper.AbstractBumper">
+                  <point x="0.0" y="-58.5" />
+                  <point x="648.0" y="674.0" />
+                  <point x="590.4166666666666" y="674.0" />
+                  <point x="60.75" y="135.5" />
+                </edge>
+                <edge source="logic.table.NullGameTable" target="logic.table.Table">
+                  <point x="0.0" y="-135.5" />
+                  <point x="0.0" y="124.5" />
+                </edge>
+                <edge source="logic.bonus.JackPotBonus" target="logic.bonus.Bonus">
+                  <point x="42.25" y="-25.5" />
+                  <point x="315.75" y="1162.0" />
+                  <point x="322.25" y="1162.0" />
+                  <point x="322.25" y="1034.0" />
+                  <point x="295.25" y="1034.0" />
+                  <point x="21.75" y="36.5" />
+                </edge>
+                <edge source="controller.visitor.VisitorDropTarget" target="controller.visitor.Visitor">
+                  <point x="0.0" y="-36.5" />
+                  <point x="1416.0" y="1469.0" />
+                  <point x="945.7142857142858" y="1469.0" />
+                  <point x="77.71428571428578" y="80.5" />
+                </edge>
+                <edge source="logic.gameelements.target.SpotTarget" target="logic.gameelements.target.Target">
+                  <point x="-42.75" y="-58.5" />
+                  <point x="814.75" y="674.0" />
+                  <point x="831.75" y="674.0" />
+                  <point x="831.75" y="353.0" />
+                  <point x="897.1969696969697" y="353.0" />
+                  <point x="-54.666666666666686" y="36.5" />
+                </edge>
+                <edge source="logic.gameelements.bumper.KickerBumper" target="logic.gameelements.bumper.AbstractBumper">
+                  <point x="0.0" y="-58.5" />
+                  <point x="420.0" y="674.0" />
+                  <point x="468.91666666666663" y="674.0" />
+                  <point x="-60.75" y="135.5" />
+                </edge>
+                <edge source="logic.gameelements.bumper.bumpermode.BumperModeUpgrade" target="logic.gameelements.bumper.bumpermode.AbstractBumperMode">
+                  <point x="0.0" y="-25.5" />
+                  <point x="688.5" y="1157.0" />
+                  <point x="746.75" y="1157.0" />
+                  <point x="-48.25" y="36.5" />
+                </edge>
+                <edge source="controller.visitor.VisitorJackPotBonus" target="controller.visitor.Visitor">
+                  <point x="0.0" y="-25.5" />
+                  <point x="604.0" y="1479.0" />
+                  <point x="829.1428571428571" y="1479.0" />
+                  <point x="-38.85714285714289" y="80.5" />
+                </edge>
+                <edge source="logic.gameelements.target.DropTarget" target="logic.gameelements.target.AbstractTarget">
+                  <point x="-42.75" y="-58.5" />
+                  <point x="1005.75" y="674.0" />
+                  <point x="994.0" y="674.0" />
+                  <point x="41.0" y="58.5" />
+                </edge>
+                <edge source="logic.gameelements.bumper.Bumper" target="logic.gameelements.Hittable">
+                  <point x="0.0" y="-91.5" />
+                  <point x="529.6666666666666" y="120.0" />
+                  <point x="680.3333333333333" y="120.0" />
+                  <point x="-35.0" y="47.5" />
+                </edge>
+                <edge source="logic.gameelements.bumper.AbstractBumper" target="logic.gameelements.bumper.Bumper">
+                  <point x="0.0" y="-135.5" />
+                  <point x="0.0" y="91.5" />
+                </edge>
+                <edge source="controller.visitor.VisitorExtraBallBonus" target="controller.visitor.Visitor">
+                  <point x="0.0" y="-25.5" />
+                  <point x="368.0" y="1469.0" />
+                  <point x="790.2857142857143" y="1469.0" />
+                  <point x="-77.71428571428567" y="80.5" />
+                </edge>
+                <edge source="logic.gameelements.bumper.bumpermode.AbstractBumperMode" target="logic.gameelements.bumper.bumpermode.BumperMode">
+                  <point x="0.0" y="-36.5" />
+                  <point x="0.0" y="36.5" />
+                </edge>
+                <edge source="logic.bonus.ExtraBallBonus" target="logic.bonus.AbstractBonus">
+                  <point x="42.25" y="-25.5" />
+                  <point x="126.75" y="1162.0" />
+                  <point x="166.75" y="1162.0" />
+                  <point x="-58.0" y="36.5" />
+                </edge>
+                <edge source="controller.visitor.VisitorSpotTarget" target="controller.visitor.Visitor">
+                  <point x="0.0" y="-36.5" />
+                  <point x="120.0" y="1459.0" />
+                  <point x="751.4285714285714" y="1459.0" />
+                  <point x="-116.57142857142856" y="80.5" />
+                </edge>
+                <edge source="logic.bonus.DropTargetBonus" target="logic.bonus.AbstractBonus">
+                  <point x="-42.25" y="-25.5" />
+                  <point x="420.25" y="1152.0" />
+                  <point x="282.75" y="1152.0" />
+                  <point x="58.0" y="36.5" />
+                </edge>
+                <edge source="controller.visitor.VisitorPopBumper" target="controller.visitor.Visitor">
+                  <point x="0.0" y="-36.5" />
+                  <point x="1149.0" y="1479.0" />
+                  <point x="906.8571428571429" y="1479.0" />
+                  <point x="38.85714285714289" y="80.5" />
+                </edge>
+                <edge source="logic.gameelements.target.DropTarget" target="logic.gameelements.target.Target">
+                  <point x="42.75" y="-58.5" />
+                  <point x="1091.25" y="674.0" />
+                  <point x="1074.25" y="674.0" />
+                  <point x="1074.25" y="353.0" />
+                  <point x="1006.530303030303" y="353.0" />
+                  <point x="54.66666666666663" y="36.5" />
+                </edge>
+                <edge source="logic.gameelements.target.Target" target="logic.gameelements.Hittable">
+                  <point x="0.0" y="-36.5" />
+                  <point x="951.8636363636364" y="120.0" />
+                  <point x="750.3333333333333" y="120.0" />
+                  <point x="35.0" y="47.5" />
+                </edge>
+                <edge source="logic.gameelements.target.SpotTarget" target="logic.gameelements.target.AbstractTarget">
+                  <point x="42.75" y="-58.5" />
+                  <point x="900.25" y="674.0" />
+                  <point x="912.0" y="674.0" />
+                  <point x="-41.0" y="58.5" />
+                </edge>
+                <edge source="logic.bonus.JackPotBonus" target="logic.bonus.AbstractBonus">
+                  <point x="-42.25" y="-25.5" />
+                  <point x="231.25" y="1162.0" />
+                  <point x="224.75" y="1162.0" />
+                  <point x="0.0" y="36.5" />
+                </edge>
+                <edge source="logic.bonus.AbstractBonus" target="logic.bonus.Bonus">
+                  <point x="0.0" y="-36.5" />
+                  <point x="224.75" y="1034.0" />
+                  <point x="251.75" y="1034.0" />
+                  <point x="-21.75" y="36.5" />
+                </edge>
+                <edge source="logic.gameelements.target.AbstractTarget" target="logic.gameelements.target.Target">
+                  <point x="0.0" y="-58.5" />
+                  <point x="953.0" y="353.0" />
+                  <point x="951.8636363636364" y="353.0" />
+                  <point x="0.0" y="36.5" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.6525573192239859" x="540.0905405405406" y="1172.1067567567568" />
+              <SelectedNodes>
+                <node>logic.gameelements.Hittable</node>
+              </SelectedNodes>
+              <Categories>
+                <Category>Methods</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
             </state>
           </provider>
         </entry>
@@ -120,8 +290,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/testLogic/testGameelements/testBumpers/testBumper.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testLogic/testGameelements/testBumpers/testKickerBumper.java" />
         <option value="$PROJECT_DIR$/src/test/java/testLogic/testBonus/testDropTargetBonus.java" />
         <option value="$PROJECT_DIR$/src/test/java/testLogic/testBonus/testExtraBallBonus.java" />
         <option value="$PROJECT_DIR$/src/test/java/testLogic/testBonus/testJackPotBonus.java" />
@@ -129,48 +297,50 @@
         <option value="$PROJECT_DIR$/src/test/java/testLogic/testGameelements/testTargets/testTargets.java" />
         <option value="$PROJECT_DIR$/src/test/java/testLogic/testGameelements/testTargets/testSpotTarget.java" />
         <option value="$PROJECT_DIR$/src/test/java/testLogic/testGameelements/testTargets/testDropTarget.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testLogic/testTable/testGameTable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/bumpermode/BumperMode.java" />
         <option value="$PROJECT_DIR$/src/main/java/logic/bonus/ExtraBallBonus.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/table/NullGameTable.java" />
         <option value="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/bumpermode/AbstractBumperMode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/bumpermode/BumperModeNotUpgrade.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/bumpermode/BumperModeUpgrade.java" />
         <option value="$PROJECT_DIR$/src/main/java/facade/HomeworkTwoFacade.java" />
         <option value="$PROJECT_DIR$/src/test/java/testLogic/testTable.java" />
         <option value="$PROJECT_DIR$/src/test/java/testLogic/testGameTable.java" />
         <option value="$PROJECT_DIR$/src/test/java/testLogic/testGeneralTable.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testController/testNullGame.java" />
         <option value="$PROJECT_DIR$/src/test/java/testController/testVisitor.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testController/testGame.java" />
         <option value="$PROJECT_DIR$/src/main/java/logic/gameelements/Hittable.java" />
         <option value="$PROJECT_DIR$/src/main/java/logic/bonus/AbstractBonus.java" />
         <option value="$PROJECT_DIR$/src/main/java/logic/bonus/DropTargetBonus.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/IGame.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/NullGame.java" />
         <option value="$PROJECT_DIR$/src/main/java/logic/bonus/JackPotBonus.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/visitor/AbstractBonusVisitor.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/visitor/BonusVisitor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorKickerBumper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorPopBumper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorSpotTarget.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorJackPotBonus.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/Game.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorExtraBallBonus.java" />
         <option value="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/Bumper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorDropTarget.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorDropTargetBonus.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/visitor/Visitor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/AbstractBumper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/KickerBumper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/PopBumper.java" />
         <option value="$PROJECT_DIR$/src/main/java/logic/gameelements/target/AbstractTarget.java" />
         <option value="$PROJECT_DIR$/src/main/java/logic/gameelements/target/DropTarget.java" />
         <option value="$PROJECT_DIR$/src/main/java/logic/gameelements/target/SpotTarget.java" />
         <option value="$PROJECT_DIR$/src/main/java/logic/gameelements/target/Target.java" />
         <option value="$PROJECT_DIR$/src/main/java/logic/table/GameTable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/table/GeneralTable.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testLogic/testTable/testGeneralTable.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testLogic/testTable/testGameTable.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testController/testGame.java" />
         <option value="$PROJECT_DIR$/src/main/java/logic/table/Table.java" />
+        <option value="$PROJECT_DIR$/src/main/java/logic/table/GeneralTable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/logic/table/NullGameTable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/NullGame.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testController/testNullGame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/Game.java" />
+        <option value="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/bumpermode/BumperModeNotUpgrade.java" />
+        <option value="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/bumpermode/BumperModeUpgrade.java" />
+        <option value="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/bumpermode/BumperMode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/AbstractBumper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/PopBumper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/KickerBumper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/visitor/Visitor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorDropTarget.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorDropTargetBonus.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorExtraBallBonus.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorJackPotBonus.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorKickerBumper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorPopBumper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorSpotTarget.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -187,7 +357,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="659" />
@@ -199,7 +369,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -225,76 +397,10 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="pinball" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cc3002-pinball" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pinball" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cc3002-pinball" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="visitor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pinball" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cc3002-pinball" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pinball" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cc3002-pinball" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="bonus" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pinball" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cc3002-pinball" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="table" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pinball" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cc3002-pinball" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pinball" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cc3002-pinball" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pinball" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cc3002-pinball" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="testController" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -508,29 +614,12 @@
       <updated>1527296232145</updated>
       <workItem from="1527296234951" duration="22457000" />
       <workItem from="1527361881041" duration="3029000" />
-      <workItem from="1527636973215" duration="16252000" />
+      <workItem from="1527636973215" duration="17643000" />
+      <workItem from="1527718849629" duration="4586000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_pinball - 2018.05.30 at 00h 43m 20s.xml">
-      <configuration name="All in pinball" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_pinball - 2018.05.30 at 00h 43m 38s.xml">
-      <configuration name="All in pinball" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_pinball - 2018.05.30 at 01h 04m 12s.xml">
-      <configuration name="All in pinball" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_pinball - 2018.05.30 at 01h 08m 12s.xml">
-      <configuration name="All in pinball" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_pinball - 2018.05.30 at 01h 09m 53s.xml">
-      <configuration name="All in pinball" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_pinball - 2018.05.30 at 01h 11m 39s.xml">
-      <configuration name="All in pinball" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_pinball - 2018.05.30 at 01h 13m 26s.xml">
       <configuration name="All in pinball" configurationId="JUnit" />
     </history-entry>
@@ -543,9 +632,27 @@
     <history-entry file="All_in_pinball - 2018.05.30 at 01h 14m 42s.xml">
       <configuration name="All in pinball" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_pinball - 2018.05.30 at 01h 20m 00s.xml">
+      <configuration name="All in pinball" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_pinball - 2018.05.30 at 01h 24m 15s.xml">
+      <configuration name="All in pinball" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_pinball - 2018.05.30 at 01h 25m 52s.xml">
+      <configuration name="All in pinball" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_pinball - 2018.05.30 at 01h 30m 57s.xml">
+      <configuration name="All in pinball" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_pinball - 2018.05.30 at 01h 31m 27s.xml">
+      <configuration name="All in pinball" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_pinball - 2018.05.30 at 18h 40m 07s.xml">
+      <configuration name="All in pinball" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41738000" />
+    <option name="totallyTimeSpent" value="47715000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -561,12 +668,12 @@
       <window_info anchor="right" id="Maven Projects" order="1" />
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="3" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.3290938" />
+      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.0" />
       <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.25768667" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.28623718" />
+      <window_info content_ui="combo" id="Project" order="4" weight="0.28623718" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
@@ -579,7 +686,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="6" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.3290938" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -594,7 +701,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/testLogic/testTable/testGameTable.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/testLogic/testBonus/testDropTargetBonus.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -620,57 +726,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-14">
           <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/facade/HomeworkTwoFacade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="169" column="31" selection-start-line="169" selection-start-column="31" selection-end-line="169" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4112#4113#0" expanded="true" />
-            <element signature="e#4155#4156#0" expanded="true" />
-            <element signature="e#4618#4619#0" expanded="true" />
-            <element signature="e#4656#4657#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement />
-          <nodes>
-            <node x="" y="">com</node>
-            <node x="" y="">testController</node>
-            <node x="" y="">controller</node>
-            <node x="" y="">netscape</node>
-            <node x="" y="">junit</node>
-            <node x="" y="">oracle</node>
-            <node x="" y="">org</node>
-            <node x="" y="">facade</node>
-            <node x="" y="">sun</node>
-            <node x="" y="">META-INF</node>
-            <node x="" y="">jdk</node>
-            <node x="" y="">groovyjarjarasm</node>
-            <node x="" y="">java</node>
-            <node x="" y="">groovy</node>
-            <node x="" y="">javax</node>
-            <node x="" y="">testLogic</node>
-            <node x="" y="">groovyjarjarcommonscli</node>
-            <node x="" y="">logic</node>
-            <node x="" y="">javafx</node>
-            <node x="" y="">groovyjarjarantlr</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="241.0" y="274.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
@@ -752,41 +807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="55" column="41" lean-forward="true" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testLogic/testTable/testGameTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testLogic/testTable/testGeneralTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#622#623#0" expanded="true" />
-            <element signature="e#664#665#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testController/testNullGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="8" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -800,210 +820,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/IGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="111" column="30" lean-forward="true" selection-start-line="111" selection-start-column="30" selection-end-line="111" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/NullGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="104" selection-start-line="104" selection-end-line="104" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/visitor/AbstractBonusVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="49" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/visitor/BonusVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/visitor/VisitorKickerBumper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#345#346#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/visitor/VisitorPopBumper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#302#303#0" expanded="true" />
-            <element signature="e#334#335#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/visitor/VisitorSpotTarget.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#306#307#0" expanded="true" />
-            <element signature="e#338#339#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/visitor/VisitorJackPotBonus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-          <folding>
-            <element signature="e#150#151#0" expanded="true" />
-            <element signature="e#192#193#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/visitor/VisitorExtraBallBonus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-          <folding>
-            <element signature="e#164#165#0" expanded="true" />
-            <element signature="e#206#207#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/visitor/VisitorDropTarget.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testController/testGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2805">
-          <caret line="168" column="24" selection-start-line="168" selection-start-column="24" selection-end-line="168" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/visitor/VisitorDropTargetBonus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
-          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/visitor/Visitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="60" column="58" selection-start-line="60" selection-start-column="58" selection-end-line="60" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/Bumper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/KickerBumper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/PopBumper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/AbstractBumper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="90" column="16" selection-start-line="90" selection-start-column="16" selection-end-line="90" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/bumpermode/AbstractBumperMode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/bumpermode/BumperMode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/bumpermode/BumperModeNotUpgrade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/bumpermode/BumperModeUpgrade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/visitor/AbstractBonusVisitor.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/visitor/BonusVisitor.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/logic/gameelements/target/AbstractTarget.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1017,18 +835,6 @@
           <caret line="93" column="5" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/gameelements/target/SpotTarget.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#427#428#0" expanded="true" />
-            <element signature="e#461#462#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1047,9 +853,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testLogic/testTable/testGeneralTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testLogic/testTable/testGameTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="28" column="57" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#706#707#0" expanded="true" />
+            <element signature="e#770#771#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/table/NullGameTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/NullGame.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/testController/testNullGame.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/IGame.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/bonus/Bonus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/logic/bonus/AbstractBonus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="289">
           <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1057,10 +902,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/bonus/Bonus.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/bonus/ExtraBallBonus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        <state relative-caret-position="306">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/bonus/JackPotBonus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#390#391#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1071,28 +927,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/bonus/ExtraBallBonus.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/bumpermode/BumperModeUpgrade.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/bonus/JackPotBonus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="4" selection-end-column="5" />
+        <state relative-caret-position="255">
+          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
           <folding>
-            <element signature="e#353#354#0" expanded="true" />
-            <element signature="e#390#391#0" expanded="true" />
+            <element signature="e#457#458#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/table/GameTable.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/Bumper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="126" column="41" lean-forward="true" selection-start-line="126" selection-start-column="41" selection-end-line="126" selection-end-column="41" />
+        <state relative-caret-position="128">
+          <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/bumpermode/BumperMode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="71" selection-start-line="3" selection-start-column="71" selection-end-line="3" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/bumpermode/AbstractBumperMode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/bumpermode/BumperModeNotUpgrade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/AbstractBumper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1799#1800#0" expanded="true" />
+            <element signature="e#1848#1849#0" expanded="true" />
+            <element signature="e#1888#1889#0" expanded="true" />
+            <element signature="e#1926#1927#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/PopBumper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/KickerBumper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/table/Table.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-388">
+          <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1101,40 +1015,375 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/logic/table/NullGameTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/table/GeneralTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1073">
-          <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
+        <state relative-caret-position="221">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#532#533#0" expanded="true" />
-            <element signature="e#559#560#0" expanded="true" />
-            <element signature="e#616#617#0" expanded="true" />
-            <element signature="e#640#641#0" expanded="true" />
-            <element signature="e#705#706#0" expanded="true" />
-            <element signature="e#729#730#0" expanded="true" />
-            <element signature="e#783#784#0" expanded="true" />
-            <element signature="e#810#811#0" expanded="true" />
-            <element signature="e#864#865#0" expanded="true" />
-            <element signature="e#891#892#0" expanded="true" />
-            <element signature="e#1064#1065#0" expanded="true" />
-            <element signature="e#1092#1093#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/table/Table.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/visitor/Visitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="70" column="24" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
+        <state relative-caret-position="34">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/visitor/VisitorDropTarget.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/visitor/VisitorDropTargetBonus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/visitor/VisitorExtraBallBonus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/visitor/VisitorJackPotBonus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+          <folding>
+            <element signature="e#201#202#0" expanded="true" />
+            <element signature="e#243#244#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/visitor/VisitorKickerBumper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#345#346#0" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/visitor/VisitorPopBumper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="185" selection-start-line="185" selection-end-line="185" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/visitor/VisitorSpotTarget.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/gameelements/target/SpotTarget.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/facade/HomeworkTwoFacade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="85" column="5" lean-forward="true" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4112#4113#0" expanded="true" />
+            <element signature="e#4155#4156#0" expanded="true" />
+            <element signature="e#4618#4619#0" expanded="true" />
+            <element signature="e#4656#4657#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/table/GameTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2070">
+          <caret line="169" column="13" lean-forward="true" selection-start-line="169" selection-start-column="13" selection-end-line="169" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="337">
+            <caret line="50" selection-start-line="50" selection-end-line="50" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testController/testGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="108" column="8" selection-start-line="108" selection-start-column="8" selection-end-line="108" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="1179.0" y="0.0">controller.Game</node>
+            <node x="772.0" y="699.0">logic.gameelements.target.SpotTarget</node>
+            <node x="408.16666666666663" y="378.0">logic.gameelements.bumper.AbstractBumper</node>
+            <node x="0.0" y="1499.0">controller.visitor.VisitorSpotTarget</node>
+            <node x="963.0" y="699.0">logic.gameelements.target.DropTarget</node>
+            <node x="260.0" y="1510.0">controller.visitor.VisitorExtraBallBonus</node>
+            <node x="408.16666666666663" y="145.0">logic.gameelements.bumper.Bumper</node>
+            <node x="1558.0" y="1510.0">controller.visitor.VisitorDropTargetBonus</node>
+            <node x="316.0" y="699.0">logic.gameelements.bumper.KickerBumper</node>
+            <node x="137.75" y="1059.0">logic.bonus.AbstractBonus</node>
+            <node x="186.5" y="936.0">logic.bonus.Bonus</node>
+            <node x="1294.0" y="1499.0">controller.visitor.VisitorDropTarget</node>
+            <node x="0.0" y="620.0">logic.table.GameTable</node>
+            <node x="378.0" y="1182.0">logic.bonus.DropTargetBonus</node>
+            <node x="496.0" y="1510.0">controller.visitor.VisitorJackPotBonus</node>
+            <node x="698.5" y="1059.0">logic.gameelements.bumper.bumpermode.AbstractBumperMode</node>
+            <node x="805.0" y="1182.0">logic.gameelements.bumper.bumpermode.BumperModeNotUpgrade</node>
+            <node x="645.3333333333333" y="0.0">logic.gameelements.Hittable</node>
+            <node x="592.0" y="1182.0">logic.gameelements.bumper.bumpermode.BumperModeUpgrade</node>
+            <node x="732.0" y="1278.0">controller.visitor.Visitor</node>
+            <node x="544.0" y="699.0">logic.gameelements.bumper.PopBumper</node>
+            <node x="732.0" y="1499.0">controller.visitor.VisitorKickerBumper</node>
+            <node x="1024.0" y="1499.0">controller.visitor.VisitorPopBumper</node>
+            <node x="871.0" y="455.0">logic.gameelements.target.AbstractTarget</node>
+            <node x="698.5" y="936.0">logic.gameelements.bumper.bumpermode.BumperMode</node>
+            <node x="189.0" y="1182.0">logic.bonus.JackPotBonus</node>
+            <node x="0.0" y="1182.0">logic.bonus.ExtraBallBonus</node>
+            <node x="0.0" y="299.0">logic.table.NullGameTable</node>
+            <node x="0.0" y="0.0">logic.table.Table</node>
+            <node x="869.8636363636364" y="200.0">logic.gameelements.target.Target</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="controller.visitor.VisitorKickerBumper" target="controller.visitor.Visitor">
+              <point x="0.0" y="-36.5" />
+              <point x="0.0" y="80.5" />
+            </edge>
+            <edge source="controller.visitor.VisitorDropTargetBonus" target="controller.visitor.Visitor">
+              <point x="0.0" y="-25.5" />
+              <point x="1666.0" y="1459.0" />
+              <point x="984.5714285714286" y="1459.0" />
+              <point x="116.57142857142856" y="80.5" />
+            </edge>
+            <edge source="logic.bonus.DropTargetBonus" target="logic.bonus.Bonus">
+              <point x="42.25" y="-25.5" />
+              <point x="504.75" y="1034.0" />
+              <point x="338.75" y="1034.0" />
+              <point x="65.25" y="36.5" />
+            </edge>
+            <edge source="logic.bonus.ExtraBallBonus" target="logic.bonus.Bonus">
+              <point x="-42.25" y="-25.5" />
+              <point x="42.25" y="1162.0" />
+              <point x="52.28125" y="1162.0" />
+              <point x="52.28125" y="1034.0" />
+              <point x="208.25" y="1034.0" />
+              <point x="-65.25" y="36.5" />
+            </edge>
+            <edge source="logic.table.GameTable" target="logic.table.NullGameTable">
+              <point x="0.0" y="-135.5" />
+              <point x="0.0" y="135.5" />
+            </edge>
+            <edge source="logic.gameelements.bumper.bumpermode.BumperModeNotUpgrade" target="logic.gameelements.bumper.bumpermode.AbstractBumperMode">
+              <point x="0.0" y="-25.5" />
+              <point x="901.5" y="1157.0" />
+              <point x="843.25" y="1157.0" />
+              <point x="48.25" y="36.5" />
+            </edge>
+            <edge source="logic.gameelements.bumper.PopBumper" target="logic.gameelements.bumper.AbstractBumper">
+              <point x="0.0" y="-58.5" />
+              <point x="648.0" y="674.0" />
+              <point x="590.4166666666666" y="674.0" />
+              <point x="60.75" y="135.5" />
+            </edge>
+            <edge source="logic.table.NullGameTable" target="logic.table.Table">
+              <point x="0.0" y="-135.5" />
+              <point x="0.0" y="124.5" />
+            </edge>
+            <edge source="logic.bonus.JackPotBonus" target="logic.bonus.Bonus">
+              <point x="42.25" y="-25.5" />
+              <point x="315.75" y="1162.0" />
+              <point x="322.25" y="1162.0" />
+              <point x="322.25" y="1034.0" />
+              <point x="295.25" y="1034.0" />
+              <point x="21.75" y="36.5" />
+            </edge>
+            <edge source="controller.visitor.VisitorDropTarget" target="controller.visitor.Visitor">
+              <point x="0.0" y="-36.5" />
+              <point x="1416.0" y="1469.0" />
+              <point x="945.7142857142858" y="1469.0" />
+              <point x="77.71428571428578" y="80.5" />
+            </edge>
+            <edge source="logic.gameelements.target.SpotTarget" target="logic.gameelements.target.Target">
+              <point x="-42.75" y="-58.5" />
+              <point x="814.75" y="674.0" />
+              <point x="831.75" y="674.0" />
+              <point x="831.75" y="353.0" />
+              <point x="897.1969696969697" y="353.0" />
+              <point x="-54.666666666666686" y="36.5" />
+            </edge>
+            <edge source="logic.gameelements.bumper.KickerBumper" target="logic.gameelements.bumper.AbstractBumper">
+              <point x="0.0" y="-58.5" />
+              <point x="420.0" y="674.0" />
+              <point x="468.91666666666663" y="674.0" />
+              <point x="-60.75" y="135.5" />
+            </edge>
+            <edge source="logic.gameelements.bumper.bumpermode.BumperModeUpgrade" target="logic.gameelements.bumper.bumpermode.AbstractBumperMode">
+              <point x="0.0" y="-25.5" />
+              <point x="688.5" y="1157.0" />
+              <point x="746.75" y="1157.0" />
+              <point x="-48.25" y="36.5" />
+            </edge>
+            <edge source="controller.visitor.VisitorJackPotBonus" target="controller.visitor.Visitor">
+              <point x="0.0" y="-25.5" />
+              <point x="604.0" y="1479.0" />
+              <point x="829.1428571428571" y="1479.0" />
+              <point x="-38.85714285714289" y="80.5" />
+            </edge>
+            <edge source="logic.gameelements.target.DropTarget" target="logic.gameelements.target.AbstractTarget">
+              <point x="-42.75" y="-58.5" />
+              <point x="1005.75" y="674.0" />
+              <point x="994.0" y="674.0" />
+              <point x="41.0" y="58.5" />
+            </edge>
+            <edge source="logic.gameelements.bumper.Bumper" target="logic.gameelements.Hittable">
+              <point x="0.0" y="-91.5" />
+              <point x="529.6666666666666" y="120.0" />
+              <point x="680.3333333333333" y="120.0" />
+              <point x="-35.0" y="47.5" />
+            </edge>
+            <edge source="logic.gameelements.bumper.AbstractBumper" target="logic.gameelements.bumper.Bumper">
+              <point x="0.0" y="-135.5" />
+              <point x="0.0" y="91.5" />
+            </edge>
+            <edge source="controller.visitor.VisitorExtraBallBonus" target="controller.visitor.Visitor">
+              <point x="0.0" y="-25.5" />
+              <point x="368.0" y="1469.0" />
+              <point x="790.2857142857143" y="1469.0" />
+              <point x="-77.71428571428567" y="80.5" />
+            </edge>
+            <edge source="logic.gameelements.bumper.bumpermode.AbstractBumperMode" target="logic.gameelements.bumper.bumpermode.BumperMode">
+              <point x="0.0" y="-36.5" />
+              <point x="0.0" y="36.5" />
+            </edge>
+            <edge source="logic.bonus.ExtraBallBonus" target="logic.bonus.AbstractBonus">
+              <point x="42.25" y="-25.5" />
+              <point x="126.75" y="1162.0" />
+              <point x="166.75" y="1162.0" />
+              <point x="-58.0" y="36.5" />
+            </edge>
+            <edge source="controller.visitor.VisitorSpotTarget" target="controller.visitor.Visitor">
+              <point x="0.0" y="-36.5" />
+              <point x="120.0" y="1459.0" />
+              <point x="751.4285714285714" y="1459.0" />
+              <point x="-116.57142857142856" y="80.5" />
+            </edge>
+            <edge source="logic.bonus.DropTargetBonus" target="logic.bonus.AbstractBonus">
+              <point x="-42.25" y="-25.5" />
+              <point x="420.25" y="1152.0" />
+              <point x="282.75" y="1152.0" />
+              <point x="58.0" y="36.5" />
+            </edge>
+            <edge source="controller.visitor.VisitorPopBumper" target="controller.visitor.Visitor">
+              <point x="0.0" y="-36.5" />
+              <point x="1149.0" y="1479.0" />
+              <point x="906.8571428571429" y="1479.0" />
+              <point x="38.85714285714289" y="80.5" />
+            </edge>
+            <edge source="logic.gameelements.target.DropTarget" target="logic.gameelements.target.Target">
+              <point x="42.75" y="-58.5" />
+              <point x="1091.25" y="674.0" />
+              <point x="1074.25" y="674.0" />
+              <point x="1074.25" y="353.0" />
+              <point x="1006.530303030303" y="353.0" />
+              <point x="54.66666666666663" y="36.5" />
+            </edge>
+            <edge source="logic.gameelements.target.Target" target="logic.gameelements.Hittable">
+              <point x="0.0" y="-36.5" />
+              <point x="951.8636363636364" y="120.0" />
+              <point x="750.3333333333333" y="120.0" />
+              <point x="35.0" y="47.5" />
+            </edge>
+            <edge source="logic.gameelements.target.SpotTarget" target="logic.gameelements.target.AbstractTarget">
+              <point x="42.75" y="-58.5" />
+              <point x="900.25" y="674.0" />
+              <point x="912.0" y="674.0" />
+              <point x="-41.0" y="58.5" />
+            </edge>
+            <edge source="logic.bonus.JackPotBonus" target="logic.bonus.AbstractBonus">
+              <point x="-42.25" y="-25.5" />
+              <point x="231.25" y="1162.0" />
+              <point x="224.75" y="1162.0" />
+              <point x="0.0" y="36.5" />
+            </edge>
+            <edge source="logic.bonus.AbstractBonus" target="logic.bonus.Bonus">
+              <point x="0.0" y="-36.5" />
+              <point x="224.75" y="1034.0" />
+              <point x="251.75" y="1034.0" />
+              <point x="-21.75" y="36.5" />
+            </edge>
+            <edge source="logic.gameelements.target.AbstractTarget" target="logic.gameelements.target.Target">
+              <point x="0.0" y="-58.5" />
+              <point x="953.0" y="353.0" />
+              <point x="951.8636363636364" y="353.0" />
+              <point x="0.0" y="36.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.6525573192239859" x="540.0905405405406" y="1172.1067567567568" />
+          <SelectedNodes>
+            <node>logic.gameelements.Hittable</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>

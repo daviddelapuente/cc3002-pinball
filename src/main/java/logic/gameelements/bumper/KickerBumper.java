@@ -53,6 +53,11 @@ public class KickerBumper extends AbstractBumper{
         return 0;
     }
 
+    /**
+     * same as upside but has a seed
+     * @param seed
+     * @return 0
+     */
     @Override
     public int hit(int seed) {
         if(this.remainingHitsToUpgrade()>0){

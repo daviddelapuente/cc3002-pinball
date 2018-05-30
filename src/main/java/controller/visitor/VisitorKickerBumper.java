@@ -9,6 +9,10 @@ public class VisitorKickerBumper extends Visitor{
         this.pts=k.getScore();
     }
 
+    /**
+     * set the socre of the game
+     * @param g
+     */
     @Override
     public void makeTheMagic(Game g){
         g.plusScore(pts);

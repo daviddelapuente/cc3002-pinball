@@ -64,15 +64,29 @@ public abstract class AbstractBumper extends Observable implements Bumper{
     @Override
     public abstract int hit(int seed);
 
+    /**
+     * make a call from the score of a bumper mode
+     * @return the score of the bumper
+     */
     @Override
     public int getScore() {
         return this.bumperMode.getScore();
     }
 
+    /**
+     * @return the mode that the bumper is implementing in
+     * the moment this metod is called
+     */
     public BumperMode getBumperMode(){
         return this.bumperMode;
     }
 
+    /**
+     * this metod, is a subpart from the metod hit, implemented in
+     * the bumpers, because it was duplicated
+     * im particar this has a seed
+     * @param seed
+     */
     public void bonusOfHit(int seed){
         if(this.remainingHitsToUpgrade()==0&&!this.isUpgraded()){
 
@@ -88,6 +102,9 @@ public abstract class AbstractBumper extends Observable implements Bumper{
         }
     }
 
+    /**
+     * the same metod upside, but without a seed
+     */
     public void bonusOfHit(){
         if(this.remainingHitsToUpgrade()==0&&!this.isUpgraded()){
             Random generetor = new Random();

@@ -1,6 +1,7 @@
 package logic.gameelements.bumper.bumpermode;
 /**
  * Interface that represents the modes of the bumpers
+ * bumpers that have diferents upgrades should implement this interface
  *
  * @author David de la puent
  */

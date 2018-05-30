@@ -9,6 +9,10 @@ public class VisitorSpotTarget extends Visitor {
         this.pts=s.getScore();
     }
 
+    /**
+     * set the score of the game
+     * @param g
+     */
     @Override
     public void makeTheMagic(Game g){
         g.plusScore(pts);
