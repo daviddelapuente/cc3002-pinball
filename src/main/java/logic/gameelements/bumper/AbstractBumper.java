@@ -1,7 +1,7 @@
 package logic.gameelements.bumper;
 
-import controller.Game;
-import controller.IGame;
+import controller.visitor.Visitor;
+import controller.visitor.VisitorExtraBallBonus;
 import logic.gameelements.bumper.bumpermode.BumperMode;
 import logic.gameelements.bumper.bumpermode.BumperModeNotUpgrade;
 import logic.gameelements.bumper.bumpermode.BumperModeUpgrade;
@@ -20,11 +20,10 @@ import java.util.Random;
  * @see logic.gameelements.bumper.PopBumper
  */
 public abstract class AbstractBumper extends Observable implements Bumper{
-    protected int hitsToUpgrade;
-    protected BumperMode bumperMode;
-    protected BumperModeNotUpgrade bmnu;
-    protected BumperModeUpgrade bmu;
-    protected IGame game;
+    int hitsToUpgrade;
+    BumperMode bumperMode;
+    BumperModeNotUpgrade bmnu;
+    BumperModeUpgrade bmu;
 
     @Override
     public int remainingHitsToUpgrade() {
@@ -70,16 +69,6 @@ public abstract class AbstractBumper extends Observable implements Bumper{
         return this.bumperMode.getScore();
     }
 
-    /**
-     * this metod acts like double dispatch, so the bumper
-     * can tell the game if it had to trigger a bonus
-     * @param game the game controller object
-     */
-    @Override
-    public void setGame(Game game){
-        this.game=game;
-    }
-
     public BumperMode getBumperMode(){
         return this.bumperMode;
     }
@@ -91,7 +80,9 @@ public abstract class AbstractBumper extends Observable implements Bumper{
             Random generetor = new Random(900000);
             double a=generetor.nextDouble();
             if(a<=0.1){
-                this.game.triggerGetExtraBallBonus();
+                setChanged();
+                Visitor bonusVisitor =new VisitorExtraBallBonus();
+                notifyObservers(bonusVisitor);
             }
             this.upgrade();
         }
@@ -102,8 +93,9 @@ public abstract class AbstractBumper extends Observable implements Bumper{
             Random generetor = new Random();
             double a=generetor.nextDouble();
             if(a<=0.1){
-                this.game.triggerGetExtraBallBonus();
-            }
+                setChanged();
+                Visitor bonusVisitor =new VisitorExtraBallBonus();
+                notifyObservers(bonusVisitor);            }
             this.upgrade();
         }
     }

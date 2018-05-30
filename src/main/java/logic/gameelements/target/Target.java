@@ -1,6 +1,5 @@
 package logic.gameelements.target;
 
-import controller.Game;
 import logic.gameelements.Hittable;
 
 /**
@@ -22,11 +21,4 @@ public interface Target extends Hittable {
      * Resets the state of a target making it active again.
      */
     void reset();
-
-    /**
-     * set the game parameter in an abstractTarget (double thispatch)
-     * so then the target can message the game that has to trigger a bonus
-     * @param game the game controller object
-     */
-    void setGame(Game game);
 }

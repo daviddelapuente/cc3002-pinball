@@ -99,4 +99,9 @@ public class NullGame implements IGame {
     public void triggerDropTargetBonus() {
 
     }
+
+    @Override
+    public void plusScore(int score) {
+
+    }
 }

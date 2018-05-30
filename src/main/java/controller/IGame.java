@@ -106,4 +106,10 @@ public interface IGame {
      * trigger the DropTargetBonus that the game has
      */
     void triggerDropTargetBonus();
+
+    /**
+     * set the game score=score+i
+     * @param score the points
+     */
+    void plusScore(int score);
 }

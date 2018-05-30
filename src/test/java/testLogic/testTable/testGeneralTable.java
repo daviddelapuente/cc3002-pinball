@@ -23,7 +23,6 @@ public class testGeneralTable {
         assertEquals(0,table.getCurrentlyDroppedDropTargets());
         assertEquals(null,table.getBumpers());
         assertEquals(null,table.getTargets());
-        assertEquals(null,table.getGame());
     }
 
     @Test
@@ -31,12 +30,6 @@ public class testGeneralTable {
         assertFalse(table.isPlayableTable());
         table.makePlayable();
         assertFalse(table.isPlayableTable());
-    }
-    @Test
-    public void testGetGame(){
-        Game game=new Game();
-        table.setGame(game);
-        assertEquals(game,table.getGame());
     }
 
     @Test

@@ -1,6 +1,5 @@
 package logic.gameelements.bumper;
 
-import controller.NullGame;
 import controller.visitor.Visitor;
 import controller.visitor.VisitorPopBumper;
 import logic.gameelements.bumper.bumpermode.BumperModeNotUpgrade;
@@ -19,7 +18,6 @@ public class PopBumper extends AbstractBumper{
      * and the bumper modes are inicialized
      */
     public PopBumper(){
-        this.game=new NullGame();
         this.hitsToUpgrade=3;
         this.bmnu=new BumperModeNotUpgrade(100);
         this.bmu=new BumperModeUpgrade(300);

@@ -1,6 +1,5 @@
 package logic.table;
 
-import controller.Game;
 import logic.gameelements.bumper.Bumper;
 import logic.gameelements.target.Target;
 
@@ -13,7 +12,6 @@ import java.util.Observer;
  * @author David de la puente
  */
 public class GeneralTable extends Observable implements Observer,Table {
-    protected Game game;
     protected int currentlyDroppedDropTargets;
 
     @Override
@@ -71,15 +69,7 @@ public class GeneralTable extends Observable implements Observer,Table {
 
     }
 
-    public void setGame(Game game){this.game=game;}
-
     @Override
     public void increseDroppedDropTargets() {
     }
-
-    @Override
-    public Game getGame() {
-        return this.game;
-    }
-
 }

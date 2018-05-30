@@ -45,7 +45,6 @@ public class testGame {
         assertEquals("pinball",game.getTableName());
         assertEquals(table,game.getCurrentTable());
         assertEquals(5,game.getCurrentTable().getNumberOfDropTargets());
-        assertEquals(game.getCurrentTable().getGame(),game);
     }
 
     @Test

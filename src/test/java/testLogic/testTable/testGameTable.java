@@ -27,7 +27,6 @@ public class testGameTable {
     @Test
     public void testGeters(){
         assertEquals("pinball",gameTable.getTableName());
-        assertEquals(null,gameTable.getGame());
     }
     @Test
     public void testIsPlayable(){

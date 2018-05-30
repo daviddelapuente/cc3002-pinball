@@ -1,6 +1,5 @@
 package logic.table;
 
-import controller.Game;
 import logic.gameelements.bumper.Bumper;
 import logic.gameelements.target.Target;
 
@@ -71,19 +70,7 @@ public interface Table{
     void makePlayable();
 
     /**
-     * set the game parameter in an Table (double thispatch)
-     * so then the table can set The game in the hittables
-     * @param game the game controller object
-     */
-    void setGame(Game game);
-
-    /**
      * increse in one, the nomber of dropTarget that has been dropped
      */
     void increseDroppedDropTargets();
-
-    /**
-     * @return the game that was set in the table, or a nullTable
-     */
-    Game getGame();
 }

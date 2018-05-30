@@ -1,6 +1,5 @@
 package logic.gameelements.bumper;
 
-import controller.Game;
 import logic.gameelements.Hittable;
 import logic.gameelements.bumper.bumpermode.BumperMode;
 
@@ -35,13 +34,6 @@ public interface Bumper extends Hittable {
      * Downgrades a bumper making {@link #isUpgraded()} return false.
      */
     void downgrade();
-
-    /**
-     * set the game parameter in an abstractBumper (double thispatch)
-     * so then the bumper can message the game that has to triggar a bonus
-     * @param game the game controller object
-     */
-    void setGame(Game game);
 
     /**
      * return the the mode of a bumper (if is upgrade or not)

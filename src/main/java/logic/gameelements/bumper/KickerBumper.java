@@ -1,6 +1,5 @@
 package logic.gameelements.bumper;
 
-import controller.NullGame;
 import controller.visitor.Visitor;
 import controller.visitor.VisitorKickerBumper;
 import logic.gameelements.bumper.bumpermode.BumperModeNotUpgrade;
@@ -18,7 +17,6 @@ public class KickerBumper extends AbstractBumper{
      * and the bumper modes are inicialized
      */
     public KickerBumper(){
-        this.game=new NullGame();
         this.hitsToUpgrade=5;
         this.bmnu=new BumperModeNotUpgrade(500);
         this.bmu =new BumperModeUpgrade(1000);

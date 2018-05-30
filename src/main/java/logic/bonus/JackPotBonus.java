@@ -24,6 +24,6 @@ public class JackPotBonus extends AbstractBonus implements Bonus {
     public void trigger(Game game) {
         this.timesTriggered+=1;
         setChanged();
-        notifyObservers(100000);
+        game.plusScore(100000);
     }
 }

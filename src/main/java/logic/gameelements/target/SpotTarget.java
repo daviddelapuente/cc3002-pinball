@@ -1,7 +1,7 @@
 package logic.gameelements.target;
 
-import controller.NullGame;
 import controller.visitor.Visitor;
+import controller.visitor.VisitorJackPotBonus;
 import controller.visitor.VisitorSpotTarget;
 
 import java.util.Random;
@@ -14,7 +14,6 @@ public class SpotTarget extends AbstractTarget implements Target{
      */
     public SpotTarget(){
         this.isActive=true;
-        this.game=new NullGame();
     }
 
     @Override
@@ -31,6 +30,11 @@ public class SpotTarget extends AbstractTarget implements Target{
     }
 
     /**
+     * this metod tells the visitor that the object that send the message is a SpotTarget(double dispatch)
+     * @param visitor a JackPotVisitor
+     */
+
+    /**
      * Alredy explained in the hittable interface
      * particular in this class, this migth trigger a jackPotBonus Bonus from the game
      * @return 0
@@ -45,7 +49,9 @@ public class SpotTarget extends AbstractTarget implements Target{
             double a= generator.nextDouble();
 
             if(a<0.02){
-                this.game.triggerJackPotBonus();
+                setChanged();
+                Visitor bonusVisitor=new VisitorJackPotBonus();
+                notifyObservers(bonusVisitor);
             }
 
             setChanged();
@@ -66,7 +72,9 @@ public class SpotTarget extends AbstractTarget implements Target{
             double a= generator.nextDouble();
 
             if(a<0.02){
-                this.game.triggerJackPotBonus();
+                setChanged();
+                Visitor bonusVisitor=new VisitorJackPotBonus();
+                notifyObservers(bonusVisitor);
             }
 
             setChanged();

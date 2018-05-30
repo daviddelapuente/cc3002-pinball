@@ -26,6 +26,6 @@ public class DropTargetBonus extends AbstractBonus implements Bonus{
         this.timesTriggered+=1;
         game.getCurrentTable().upgradeAllBumpers();
         setChanged();
-        notifyObservers(1000000);
+        game.plusScore(1000000);
     }
 }

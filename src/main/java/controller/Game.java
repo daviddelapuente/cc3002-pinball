@@ -1,5 +1,6 @@
 package controller;
 
+import controller.visitor.Visitor;
 import logic.bonus.Bonus;
 import logic.bonus.DropTargetBonus;
 import logic.bonus.ExtraBallBonus;
@@ -51,7 +52,6 @@ public class Game implements IGame,Observer{
         t.addObserver(this);
         this.table= t;
 
-        this.table.setGame(this);
         table.makePlayable();
         this.availableBalls=3;
         this.currentScore=0;
@@ -121,8 +121,8 @@ public class Game implements IGame,Observer{
 
     @Override
     public void update(Observable o, Object arg) {
-        int a= (int) arg;
-        this.currentScore+=a;
+        Visitor v=(Visitor) arg;
+        v.makeTheMagic(this);
     }
 
     @Override
@@ -138,5 +138,10 @@ public class Game implements IGame,Observer{
     @Override
     public void triggerDropTargetBonus() {
         this.dropTargetBonus.trigger(this);
+    }
+
+    @Override
+    public void plusScore(int score) {
+        this.currentScore+=score;
     }
 }

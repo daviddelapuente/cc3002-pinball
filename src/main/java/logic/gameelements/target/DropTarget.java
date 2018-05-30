@@ -1,8 +1,9 @@
 package logic.gameelements.target;
 
-import controller.NullGame;
 import controller.visitor.Visitor;
 import controller.visitor.VisitorDropTarget;
+import controller.visitor.VisitorDropTargetBonus;
+import controller.visitor.VisitorExtraBallBonus;
 
 import java.util.Random;
 /**
@@ -11,7 +12,6 @@ import java.util.Random;
  * @author David de la puente
  */
 public class DropTarget extends AbstractTarget implements Target {
-    private int numberOfDropTargets;
 
     /**
      * this is the constructor, set the variables
@@ -19,7 +19,6 @@ public class DropTarget extends AbstractTarget implements Target {
      */
     public DropTarget(){
         this.isActive=true;
-        this.game=new NullGame();
     }
 
     @Override
@@ -45,14 +44,15 @@ public class DropTarget extends AbstractTarget implements Target {
     public int hit() {
         if (this.isActive){
             this.isActive=false;
-            game.getCurrentTable().increseDroppedDropTargets();
 
             //seed = 900000
             Random generator = new Random(900000);
             double a= generator.nextDouble();
 
             if(a<0.3){
-                this.game.triggerGetExtraBallBonus();
+               setChanged();
+               Visitor bonusVisitor=new VisitorExtraBallBonus();
+               notifyObservers(bonusVisitor);
             }
 
             setChanged();
@@ -60,9 +60,9 @@ public class DropTarget extends AbstractTarget implements Target {
             this.accept(v);
             notifyObservers(v);
 
-            if (game.getCurrentTable().getCurrentlyDroppedDropTargets()==game.getCurrentTable().getNumberOfDropTargets()){
-                this.game.triggerDropTargetBonus();
-            }
+            setChanged();
+            Visitor bonusVisitor= new VisitorDropTargetBonus();
+            notifyObservers(bonusVisitor);
         }
         return 0;
     }
@@ -71,12 +71,14 @@ public class DropTarget extends AbstractTarget implements Target {
     public int hit(int seed) {
         if (this.isActive){
             this.isActive=false;
-            game.getCurrentTable().increseDroppedDropTargets();
+
             Random generator = new Random(seed);
             double a= generator.nextDouble();
 
             if(a<0.3){
-                this.game.triggerGetExtraBallBonus();
+                setChanged();
+                Visitor bonusVisitor=new VisitorExtraBallBonus();
+                notifyObservers(bonusVisitor);
             }
 
             setChanged();
@@ -84,18 +86,10 @@ public class DropTarget extends AbstractTarget implements Target {
             this.accept(v);
             notifyObservers(v);
 
-            if (game.getCurrentTable().getCurrentlyDroppedDropTargets()==game.getCurrentTable().getNumberOfDropTargets()){
-                this.game.triggerDropTargetBonus();
-            }
+            setChanged();
+            Visitor bonusVisitor= new VisitorDropTargetBonus();
+            notifyObservers(bonusVisitor);
         }
         return 0;
-    }
-
-    /**
-     * set the variable numberOfDropTargets, to the @param
-     * @param numberOfDropTargets is the number of dropDropTargets in the table
-     */
-    public void setNumberOfDropTargets(int numberOfDropTargets){
-        this.numberOfDropTargets=numberOfDropTargets;
     }
 }

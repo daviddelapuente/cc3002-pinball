@@ -1,5 +1,6 @@
 package controller.visitor;
 
+import controller.Game;
 import logic.bonus.DropTargetBonus;
 import logic.bonus.JackPotBonus;
 import logic.gameelements.bumper.KickerBumper;
@@ -43,6 +44,8 @@ public class Visitor {
      */
     public void visitDropTarget(DropTarget d){}
 
+
+
     /**
      *
      * @return the points that every visitor keeps, so then they can send a message to the game
@@ -50,5 +53,14 @@ public class Visitor {
      */
     public int getPts(){
         return pts;
+    }
+
+    /**
+     * this metods, make a diferent action depending on the type of visitors, in bonnus visitors
+     * it will trigger the bonuses
+     * in hittable visitors it will plus score to the game
+     * @param game
+     */
+    public void makeTheMagic(Game game) {
     }
 }
