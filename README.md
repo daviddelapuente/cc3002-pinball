@@ -15,7 +15,7 @@ debe instalarse inteliJ, y abrir con open, la carpeta donde esta este projecto, 
 en el escritorio debe crearse una carpeta que contenga los archivos de este programa (puede
 usarse git clone desde github).
 
-luego abrir inteliJ, ir a file->open y ahi buscar la carpeta en el arbos de carpetas.
+luego abrir inteliJ, ir a file->open y ahi buscar la carpeta en el arbol de carpetas.
 de esta forma el projecto sera importado a inteliJ y podra editarse.
 
 
@@ -49,7 +49,7 @@ game.getCurrentTable().getBumpers().get(0).hit(900000); y este es un hit con see
 
 ```
 
-##implementacion
+###implementacion
 
 gameelements:
 
