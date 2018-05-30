@@ -11,7 +11,7 @@ import java.util.List;
  *
  * @author Juan-Pablo Silva
  */
-public interface Table {
+public interface Table{
     /**
      * Gets the table name.
      *

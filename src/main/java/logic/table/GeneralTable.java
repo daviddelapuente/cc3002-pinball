@@ -75,7 +75,6 @@ public class GeneralTable extends Observable implements Observer,Table {
 
     @Override
     public void increseDroppedDropTargets() {
-        this.currentlyDroppedDropTargets+=1;
     }
 
     @Override

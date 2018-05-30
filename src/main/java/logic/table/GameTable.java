@@ -163,6 +163,11 @@ public class GameTable extends GeneralTable{
     }
 
     @Override
+    public void increseDroppedDropTargets(){
+        this.currentlyDroppedDropTargets+=1;
+    }
+
+    @Override
     public void resetDropTargets() {
         int numberOfTargets=this.numberOfSpotTargets+this.numberOfDropTargets;
         for(int i=this.numberOfSpotTargets;i<numberOfTargets;i++){
@@ -208,7 +213,6 @@ public class GameTable extends GeneralTable{
         for(Bumper b :bumpers){
             b.setGame(this.game);
         }
-
         for(Target t:targets){
             t.setGame(this.game);
         }

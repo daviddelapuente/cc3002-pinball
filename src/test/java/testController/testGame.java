@@ -2,9 +2,16 @@ package testController;
 
 import controller.Game;
 import logic.gameelements.bumper.Bumper;
+import logic.gameelements.bumper.KickerBumper;
+import logic.gameelements.bumper.PopBumper;
+import logic.gameelements.target.DropTarget;
+import logic.gameelements.target.SpotTarget;
 import logic.table.*;
 import org.junit.Before;
 import org.junit.Test;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -24,12 +31,10 @@ public class testGame {
     public void  testIsPlayableTable(){
         assertFalse(game.isPlayableTable());
 
-        // probamos que al pasarle una null table, no se puede jugar
         Table nullTable=new NullGameTable();
         game.setGameTable(nullTable);
         assertFalse(game.isPlayableTable());
 
-        // probamos que al pasarle una table buena se puede jugar
         game.setGameTable(table);
         assertTrue(game.isPlayableTable());
     }
@@ -41,6 +46,42 @@ public class testGame {
         assertEquals(table,game.getCurrentTable());
         assertEquals(5,game.getCurrentTable().getNumberOfDropTargets());
         assertEquals(game.getCurrentTable().getGame(),game);
+    }
+
+    @Test
+    public void testGetersSeed(){
+        game.setGameTable(table);
+        List<Bumper> expectedBumpers=new ArrayList<>();
+
+        List<Bumper> actualBumpers=game.getBumpers();
+
+        PopBumper pop=new PopBumper();
+        KickerBumper kicker= new KickerBumper();
+
+        //these are the bumpers that make the seed
+        expectedBumpers.add(kicker);
+        expectedBumpers.add(pop);
+        expectedBumpers.add(kicker);
+        expectedBumpers.add(kicker);
+        expectedBumpers.add(kicker);
+        expectedBumpers.add(pop);
+        expectedBumpers.add(pop);
+        expectedBumpers.add(kicker);
+        expectedBumpers.add(kicker);
+        expectedBumpers.add(kicker);
+
+        for(int i=0;i<10;i++){
+            Bumper b1=expectedBumpers.get(i);
+            Bumper b2= actualBumpers.get(i);
+            boolean p=(b1 instanceof PopBumper)==(b2 instanceof PopBumper);
+            assertTrue(p);
+        }
+
+        for (int i=0;i<5;i++){
+            assertTrue(game.getTargets().get(i) instanceof SpotTarget);
+            assertTrue(game.getTargets().get(i+5) instanceof DropTarget);
+        }
+
     }
 
     @Test
@@ -180,5 +221,28 @@ public class testGame {
         }
         //it should be upgrade, therefore the extraBallBonus was triggered
         assertEquals(5,game.getAvailableBalls());
+    }
+
+    @Test
+    public void testBonus(){
+        game.setGameTable(table);
+        assertEquals(0,game.getCurrentScore());
+        game.triggerDropTargetBonus();
+        assertEquals(1000000,game.getCurrentScore());
+        game.triggerJackPotBonus();
+        assertEquals(1100000,game.getCurrentScore());
+        assertEquals(3,game.getAvailableBalls());
+        game.triggerGetExtraBallBonus();
+        assertEquals(4,game.getAvailableBalls());
+    }
+
+    @Test
+    public void gameOverTest(){
+        game.setGameTable(table);
+        assertFalse(game.gameOver());
+        game.dropBall();
+        game.dropBall();
+        game.dropBall();
+        assertTrue(game.gameOver());
     }
 }
