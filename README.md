@@ -1,6 +1,31 @@
 # Pinball - Tarea CC3002
 
-1) como correr el programa:
+esta tarea representa la logica detras de un juego de pinball
+
+## Introduccion
+
+en este projecto, se encuentran los archivos para crear la logica de un juego de pinball
+
+### Prerequisitos
+
+debe instalarse inteliJ, y abrir con open, la carpeta donde esta este projecto, desde inteliJ
+
+### Opening
+
+en el escritorio debe crearse una carpeta que contenga los archivos de este programa (puede
+usarse git clone desde github).
+
+luego abrir inteliJ, ir a file->open y ahi buscar la carpeta en el arbos de carpetas.
+de esta forma el projecto sera importado a inteliJ y podra editarse.
+
+
+## Tests
+
+el programa viene con test incluidos en el path src/test/java
+para correrlos debe hacerse click derecho en la carpeta java o las que esa carpeta contiene
+y apretar "run al test whit coverage"
+
+estos testean la funcioinalidad de las clases que contiene el programa
 
 para testear se recomienda usar las clases Game o HomeworktwoFacade en ellas se encuentran
 los metodos que van a ser usados para la implementacion de la interfaz grafica.
@@ -12,7 +37,8 @@ convenientes (ademas existe la posibilidad de agregar un seed para testear)
 despues de pasarle Table a game, se pueden llamar a los elementos de table para interactuar
 con ellos, como por ejemplo Bumpers o Targets. 
 
-ej: se puede hacer
+
+```
 Game game=new Game();
 Table table = new GameTable(10,0.5,5,5);
 game.setTable(table);
@@ -21,8 +47,9 @@ game.getCurrentTable().getBumpers().get(0).hit() y puede simularse un hit
 game.getCurrentTable().getBumpers().get(0).hit(900000); y este es un hit con seed 
 (el seed en hit es para los bonus)
 
+```
 
-2) implementaciones:
+##implementacion
 
 gameelements:
 
@@ -50,3 +77,6 @@ visitor:
 se implemento un visitor para cada gameelement y bonus.
  
 
+## Build whit
+
+* [Maven](https://maven.apache.org/) - Dependency Management

@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57a28998-a905-42f7-b32a-ec7f1bafadde" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/IGame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/NullGame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/visitor/Visitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/visitor/Visitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorDropTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorDropTarget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorDropTargetBonus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorDropTargetBonus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorExtraBallBonus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorExtraBallBonus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorJackPotBonus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorJackPotBonus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorKickerBumper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorKickerBumper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorPopBumper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorPopBumper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorSpotTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorSpotTarget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/AbstractBumper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/AbstractBumper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/KickerBumper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/KickerBumper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/PopBumper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/PopBumper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/bumpermode/BumperMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/bumpermode/BumperMode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/bumpermode/BumperModeNotUpgrade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/bumpermode/BumperModeNotUpgrade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/bumpermode/BumperModeUpgrade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/bumpermode/BumperModeUpgrade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/table/GameTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/table/GameTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/table/GeneralTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/table/NullGameTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testController/testNullGame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testLogic/testTable/testGeneralTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testLogic/testTable/testGeneralTable.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,7 +26,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="JAVA/" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JAVA/" pinned="false" current-in-tab="false">
         <entry file="uml://JAVA/">
           <provider selected="true" editor-type-id="UmlEditorProvider">
             <state>
@@ -261,7 +239,7 @@
                   <point x="0.0" y="36.5" />
                 </edge>
               </edges>
-              <settings layout="Hierarchic Group" zoom="0.6525573192239859" x="540.0905405405406" y="1172.1067567567568" />
+              <settings layout="Hierarchic Group" zoom="0.6525573192239859" x="-138.77702702702703" y="1097.7837837837837" />
               <SelectedNodes>
                 <node>logic.gameelements.Hittable</node>
               </SelectedNodes>
@@ -270,6 +248,18 @@
               </Categories>
               <SCOPE>All</SCOPE>
               <VISIBILITY>private</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="517">
+                <caret line="79" column="2" selection-start-line="79" selection-start-column="2" selection-end-line="79" selection-end-column="2" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -357,7 +347,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="659" />
@@ -394,8 +384,30 @@
               <item name="pinball" type="b2602c69:ProjectViewProjectNode" />
               <item name="cc3002-pinball" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinball" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cc3002-pinball" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinball" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cc3002-pinball" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="testController" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinball" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cc3002-pinball" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="testLogic" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -615,7 +627,7 @@
       <workItem from="1527296234951" duration="22457000" />
       <workItem from="1527361881041" duration="3029000" />
       <workItem from="1527636973215" duration="17643000" />
-      <workItem from="1527718849629" duration="4586000" />
+      <workItem from="1527718849629" duration="5496000" />
     </task>
     <servers />
   </component>
@@ -652,7 +664,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47715000" />
+    <option name="totallyTimeSpent" value="48625000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -673,7 +685,7 @@
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="Designer" order="0" />
-      <window_info content_ui="combo" id="Project" order="4" weight="0.28623718" />
+      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.28623718" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
@@ -1143,16 +1155,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="337">
-            <caret line="50" selection-start-line="50" selection-end-line="50" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testController/testGame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -1375,7 +1377,7 @@
               <point x="0.0" y="36.5" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.6525573192239859" x="540.0905405405406" y="1172.1067567567568" />
+          <settings layout="Hierarchic Group" zoom="0.6525573192239859" x="-138.77702702702703" y="1097.7837837837837" />
           <SelectedNodes>
             <node>logic.gameelements.Hittable</node>
           </SelectedNodes>
@@ -1384,6 +1386,16 @@
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="517">
+            <caret line="79" column="2" selection-start-line="79" selection-start-column="2" selection-end-line="79" selection-end-column="2" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
