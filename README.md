@@ -49,7 +49,9 @@ game.getCurrentTable().getBumpers().get(0).hit(900000); y este es un hit con see
 
 ```
 
-###implementacion
+
+
+##implementacion
 
 gameelements:
 
