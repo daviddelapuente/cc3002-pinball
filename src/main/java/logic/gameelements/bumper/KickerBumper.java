@@ -20,7 +20,6 @@ public class KickerBumper extends AbstractBumper{
         this.hitsToUpgrade=5;
         this.bmnu=new BumperModeNotUpgrade(500);
         this.bmu =new BumperModeUpgrade(1000);
-
         this.bumperMode=bmnu;
     }
 
@@ -44,13 +43,12 @@ public class KickerBumper extends AbstractBumper{
         }
 
         setChanged();
-
         Visitor v = new VisitorKickerBumper();
         this.accept(v);
         notifyObservers(v);
 
         this.bonusOfHit();
-        return 0;
+        return this.getScore();
     }
 
     /**
@@ -65,13 +63,12 @@ public class KickerBumper extends AbstractBumper{
         }
 
         setChanged();
-
         Visitor v = new VisitorKickerBumper();
         this.accept(v);
         notifyObservers(v);
 
         this.bonusOfHit(seed);
-        return 0;
+        return this.getScore();
     }
 
     /**

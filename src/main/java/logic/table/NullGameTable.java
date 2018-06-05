@@ -72,4 +72,9 @@ public class NullGameTable extends Observable implements Observer,Table {
     @Override
     public void increseDroppedDropTargets() {
     }
+
+    @Override
+    public void decreseDroppedDropTarget() {
+
+    }
 }

@@ -3,6 +3,12 @@ package controller.visitor;
 import controller.Game;
 import logic.gameelements.bumper.KickerBumper;
 
+/**
+ * visitor class, this class is created when a kickerBumper
+ * is hit, then the observers, can call the makeTheMagic metod.
+ *
+ * @author David de la puente
+ */
 public class VisitorKickerBumper extends Visitor{
     @Override
     public void visitKickerBumper(KickerBumper k) {

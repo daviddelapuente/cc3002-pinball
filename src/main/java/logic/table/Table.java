@@ -73,4 +73,9 @@ public interface Table{
      * increse in one, the nomber of dropTarget that has been dropped
      */
     void increseDroppedDropTargets();
+
+    /**
+     * decrese in one, the nomber of dropTarget that has been dropped
+     */
+    void decreseDroppedDropTarget();
 }

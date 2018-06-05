@@ -5,6 +5,7 @@ import logic.gameelements.target.Target;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 public class testDropTarget extends testTargets{
@@ -16,5 +17,7 @@ public class testDropTarget extends testTargets{
     @Test
     public void testGetScore() {
         assertTrue(this.target.getScore()==100);
+        assertEquals(100,this.target.hit());
+        assertEquals(0,this.target.hit());
     }
 }

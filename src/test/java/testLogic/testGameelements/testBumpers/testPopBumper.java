@@ -17,6 +17,12 @@ public class testPopBumper extends testBumper {
     @Test
     public void testGetScore() {
         assertTrue(bumper.getScore()==100);
+        assertEquals(100,bumper.hit());
+        for(int i=0;i<2;i++){
+            bumper.hit();
+        }
+        assertEquals(300,bumper.hit());
+        assertEquals(300,bumper.getScore());
     }
 
     @Test

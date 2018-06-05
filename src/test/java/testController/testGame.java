@@ -244,4 +244,16 @@ public class testGame {
         game.dropBall();
         assertTrue(game.gameOver());
     }
+
+    @Test
+    public void testTargetReset(){
+        game.setGameTable(table);
+        assertEquals(0,game.getCurrentTable().getCurrentlyDroppedDropTargets());
+        game.getCurrentTable().getTargets().get(5).hit();
+        game.getCurrentTable().getTargets().get(6).hit();
+        assertEquals(2,game.getCurrentTable().getCurrentlyDroppedDropTargets());
+        game.getCurrentTable().getTargets().get(6).reset();
+        assertEquals(1,game.getCurrentTable().getCurrentlyDroppedDropTargets());
+
+    }
 }

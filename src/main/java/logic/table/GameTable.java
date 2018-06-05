@@ -189,4 +189,9 @@ public class GameTable extends NullGameTable {
         setChanged();
         notifyObservers(arg);
     }
+
+    @Override
+    public void decreseDroppedDropTarget(){
+        this.currentlyDroppedDropTargets-=1;
+    }
 }

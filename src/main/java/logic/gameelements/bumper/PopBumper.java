@@ -47,11 +47,10 @@ public class PopBumper extends AbstractBumper{
         setChanged();
         Visitor v=new VisitorPopBumper();
         this.accept(v);
-
         notifyObservers(v);
 
         this.bonusOfHit();
-        return 0;
+        return this.getScore();
     }
 
     /**
@@ -68,11 +67,10 @@ public class PopBumper extends AbstractBumper{
         setChanged();
         Visitor v=new VisitorPopBumper();
         this.accept(v);
-
         notifyObservers(v);
 
         this.bonusOfHit(seed);
-        return 0;
+        return this.getScore();
     }
 
     /**

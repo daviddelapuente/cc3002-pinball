@@ -3,6 +3,12 @@ package controller.visitor;
 import controller.Game;
 import logic.gameelements.target.SpotTarget;
 
+/**
+ * visitor class, this class is created when a spotTarget
+ * is hit, then the observers, can call the makeTheMagic metod.
+ *
+ * @author David de la puente
+ */
 public class VisitorSpotTarget extends Visitor {
     @Override
     public void visitSpotTarget(SpotTarget s) {

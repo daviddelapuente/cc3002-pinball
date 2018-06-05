@@ -14,11 +14,12 @@ public class SpotTarget extends AbstractTarget implements Target{
      */
     public SpotTarget(){
         this.isActive=true;
+        this.score=0;
     }
 
     @Override
     public int getScore() {
-        return 0;
+        return this.score;
     }
 
     /**
@@ -59,7 +60,7 @@ public class SpotTarget extends AbstractTarget implements Target{
             this.accept(v);
             notifyObservers(v);
         }
-        return 0;
+        return this.getScore();
     }
 
     @Override
@@ -82,6 +83,6 @@ public class SpotTarget extends AbstractTarget implements Target{
             this.accept(v);
             notifyObservers(v);
         }
-        return 0;
+        return this.getScore();
     }
 }

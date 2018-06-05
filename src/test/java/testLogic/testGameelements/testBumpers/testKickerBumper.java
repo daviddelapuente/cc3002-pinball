@@ -4,9 +4,7 @@ import logic.gameelements.bumper.KickerBumper;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 public class testKickerBumper extends testBumper{
     @Before
@@ -16,6 +14,13 @@ public class testKickerBumper extends testBumper{
     @Test
     public void testGetScore() {
         assertTrue(bumper.getScore()==500);
+        assertEquals(500,bumper.hit());
+        for(int i=0;i<4;i++){
+            bumper.hit();
+        }
+        assertEquals(1000,bumper.hit());
+        assertEquals(1000,bumper.getScore());
+
     }
 
     @Test

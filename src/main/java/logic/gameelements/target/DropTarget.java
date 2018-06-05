@@ -19,11 +19,12 @@ public class DropTarget extends AbstractTarget implements Target {
      */
     public DropTarget(){
         this.isActive=true;
+        this.score=100;
     }
 
     @Override
     public int getScore() {
-        return 100;
+        return this.score;
     }
 
     /**
@@ -42,9 +43,8 @@ public class DropTarget extends AbstractTarget implements Target {
      */
     @Override
     public int hit() {
+        int hitValue=0;
         if (this.isActive){
-            this.isActive=false;
-
             //seed = 900000
             Random generator = new Random(900000);
             double a= generator.nextDouble();
@@ -63,15 +63,18 @@ public class DropTarget extends AbstractTarget implements Target {
             setChanged();
             Visitor bonusVisitor= new VisitorDropTargetBonus();
             notifyObservers(bonusVisitor);
+
+            this.isActive=false;
+            hitValue=this.getScore();
+            this.score=0;
         }
-        return 0;
+        return hitValue;
     }
 
     @Override
     public int hit(int seed) {
+        int hitValue=0;
         if (this.isActive){
-            this.isActive=false;
-
             Random generator = new Random(seed);
             double a= generator.nextDouble();
 
@@ -89,7 +92,11 @@ public class DropTarget extends AbstractTarget implements Target {
             setChanged();
             Visitor bonusVisitor= new VisitorDropTargetBonus();
             notifyObservers(bonusVisitor);
+
+            this.isActive=false;
+            hitValue=this.getScore();
+            this.score=0;
         }
-        return 0;
+        return hitValue;
     }
 }

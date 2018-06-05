@@ -2,7 +2,12 @@ package controller.visitor;
 
 import controller.Game;
 import logic.gameelements.target.DropTarget;
-
+/**
+ * visitor class, this class is created when a dropTarget
+ * is hit, then the observers, can call the makeTheMagic metod.
+ *
+ * @author David de la puente
+ */
 public class VisitorDropTarget extends Visitor {
     @Override
     public void visitDropTarget(DropTarget d) {
