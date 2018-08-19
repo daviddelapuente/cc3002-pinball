@@ -3,11 +3,9 @@ package gui;
 
 import com.almasb.fxgl.entity.Entity;
 import com.almasb.fxgl.entity.component.Component;
-import gameLogic.logic.gameelements.bumper.Bumper;
+import logic.gameelements.bumper.Bumper;
 import javafx.scene.shape.Circle;
 import javafx.scene.paint.Color;
-
-import java.awt.*;
 
 public class PopBumperComponent extends Component {
     Bumper b;

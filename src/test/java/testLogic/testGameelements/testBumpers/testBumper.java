@@ -1,5 +1,5 @@
 package testLogic.testGameelements.testBumpers;
-import gameLogic.logic.gameelements.bumper.Bumper;
+import logic.gameelements.bumper.Bumper;
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;

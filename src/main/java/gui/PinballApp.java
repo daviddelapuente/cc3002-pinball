@@ -2,38 +2,32 @@ package gui;
 
 import com.almasb.fxgl.app.GameApplication;
 import com.almasb.fxgl.entity.Entity;
-import com.almasb.fxgl.entity.components.CollidableComponent;
 import com.almasb.fxgl.input.*;
 
 import com.almasb.fxgl.physics.CollisionHandler;
 import com.almasb.fxgl.physics.HitBox;
-import com.almasb.fxgl.physics.PhysicsComponent;
 import com.almasb.fxgl.settings.GameSettings;
 
-import gameLogic.logic.controller.Game;
-import gameLogic.logic.controller.IGame;
-import gameLogic.logic.controller.nullGame;
-import gameLogic.logic.gameelements.bumper.Bumper;
-import gameLogic.logic.gameelements.bumper.KickerBumper;
-import gameLogic.logic.gameelements.bumper.PopBumper;
-import gameLogic.logic.gameelements.target.DropTarget;
-import gameLogic.logic.gameelements.target.SpotTarget;
-import gameLogic.logic.gameelements.target.Target;
-import gameLogic.logic.table.GameTable;
-import gameLogic.logic.table.Table;
+import logic.controller.Game;
+import logic.controller.IGame;
+import logic.gameelements.bumper.Bumper;
+import logic.gameelements.bumper.KickerBumper;
+import logic.gameelements.bumper.PopBumper;
+import logic.gameelements.target.DropTarget;
+import logic.gameelements.target.SpotTarget;
+import logic.gameelements.target.Target;
+import logic.table.GameTable;
+import logic.table.Table;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.Spinner;
 import javafx.scene.input.KeyCode;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
-import javafx.scene.input.MouseButton;
 
-import javax.accessibility.AccessibleEditableText;
 import java.util.ArrayList;
 import java.util.Map;
 
@@ -523,21 +517,25 @@ public class PinballApp extends GameApplication {
         getPhysicsWorld().addCollisionHandler(new CollisionHandler(EntityType.BALL, EntityType.POPBUMPER) {
             protected void onHitBoxTrigger(Entity ball, Entity bumper, HitBox boxBall, HitBox boxBumper) {
                 bumper.getComponent(PopBumperComponent.class).hit(bumper);
+                getAudioPlayer().playSound("hit.wav");
             }
         });
         getPhysicsWorld().addCollisionHandler(new CollisionHandler(EntityType.BALL, EntityType.KICKERBUMPER) {
             protected void onHitBoxTrigger(Entity ball, Entity bumper, HitBox boxBall, HitBox boxBumper) {
                 bumper.getComponent(KickerBumperComponent.class).hit(bumper);
+                getAudioPlayer().playSound("hit.wav");
             }
         });
         getPhysicsWorld().addCollisionHandler(new CollisionHandler(EntityType.BALL, EntityType.DROPTARGET) {
             protected void onHitBoxTrigger(Entity ball, Entity target, HitBox boxBall, HitBox boxBumper) {
                 target.getComponent(DropTargetComponent.class).hit(target,factory,viewDropTargets);
+                getAudioPlayer().playSound("hit.wav");
             }
         });
         getPhysicsWorld().addCollisionHandler(new CollisionHandler(EntityType.BALL, EntityType.SPOTTARGET) {
             protected void onHitBoxTrigger(Entity ball, Entity target, HitBox boxBall, HitBox boxBumper) {
                 target.getComponent(SpotTargetComponent.class).hit(target,factory,viewSpotTargets);
+                getAudioPlayer().playSound("hit.wav");
             }
         });
         getPhysicsWorld().addCollisionHandler(new CollisionHandler(EntityType.BALL, EntityType.WALL) {

@@ -1,7 +1,7 @@
 package testLogic.testTable;
 
-import gameLogic.logic.table.NullGameTable;
-import gameLogic.logic.table.Table;
+import logic.table.NullGameTable;
+import logic.table.Table;
 import org.junit.Before;
 import org.junit.Test;
 

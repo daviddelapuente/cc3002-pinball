@@ -1,12 +1,12 @@
-import gameLogic.logic.facade.HomeworkTwoFacade;
-import gameLogic.logic.gameelements.Hittable;
-import gameLogic.logic.gameelements.bumper.Bumper;
-import gameLogic.logic.gameelements.bumper.KickerBumper;
-import gameLogic.logic.gameelements.bumper.PopBumper;
-import gameLogic.logic.gameelements.target.DropTarget;
-import gameLogic.logic.gameelements.target.SpotTarget;
-import gameLogic.logic.gameelements.target.Target;
-import gameLogic.logic.table.Table;
+import facade.HomeworkTwoFacade;
+import logic.gameelements.Hittable;
+import logic.gameelements.bumper.Bumper;
+import logic.gameelements.bumper.KickerBumper;
+import logic.gameelements.bumper.PopBumper;
+import logic.gameelements.target.DropTarget;
+import logic.gameelements.target.SpotTarget;
+import logic.gameelements.target.Target;
+import logic.table.Table;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -494,7 +494,7 @@ public class BigTestT2 {
         assertEquals(expectedScore, hw2.getCurrentScore());
 
         // times triggered
-        /*assertEquals(spotTargetList.size(), hw2.getJackPotBonus().timesTriggered());*/
+        assertEquals(spotTargetList.size(), hw2.getJackPotBonus().timesTriggered());
     }
 
     @Test

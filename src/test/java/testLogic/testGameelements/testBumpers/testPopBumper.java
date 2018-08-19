@@ -1,6 +1,6 @@
 package testLogic.testGameelements.testBumpers;
 
-import gameLogic.logic.gameelements.bumper.PopBumper;
+import logic.gameelements.bumper.PopBumper;
 import org.junit.Before;
 import org.junit.Test;
 

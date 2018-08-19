@@ -1,12 +1,12 @@
 package testController;
 
-import gameLogic.logic.controller.Game;
-import gameLogic.logic.gameelements.bumper.Bumper;
-import gameLogic.logic.gameelements.bumper.KickerBumper;
-import gameLogic.logic.gameelements.bumper.PopBumper;
-import gameLogic.logic.gameelements.target.DropTarget;
-import gameLogic.logic.gameelements.target.SpotTarget;
-import gameLogic.logic.table.*;
+import logic.controller.Game;
+import logic.gameelements.bumper.Bumper;
+import logic.gameelements.bumper.KickerBumper;
+import logic.gameelements.bumper.PopBumper;
+import logic.gameelements.target.DropTarget;
+import logic.gameelements.target.SpotTarget;
+import logic.table.*;
 import org.junit.Before;
 import org.junit.Test;
 

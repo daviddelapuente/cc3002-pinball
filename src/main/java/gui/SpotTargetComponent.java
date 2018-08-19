@@ -1,7 +1,7 @@
 package gui;
 import com.almasb.fxgl.entity.Entity;
 import com.almasb.fxgl.entity.component.Component;
-import gameLogic.logic.gameelements.target.Target;
+import logic.gameelements.target.Target;
 import javafx.scene.paint.Color;
 
 import java.util.ArrayList;
