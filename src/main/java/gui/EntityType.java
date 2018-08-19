@@ -1,0 +1,5 @@
+package gui;
+
+public enum EntityType {
+    BALL, TRIANGLE, WALL,POPBUMPER,KICKERBUMPER, SPOTTARGET,DROPTARGET
+}

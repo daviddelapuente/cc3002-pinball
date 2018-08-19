@@ -1,7 +1,7 @@
-package controller.visitor;
+package gameLogic.logic.controller.visitor;
 
-import controller.Game;
-import logic.gameelements.target.DropTarget;
+import gameLogic.logic.controller.Game;
+import gameLogic.logic.gameelements.target.DropTarget;
 /**
  * visitor class, this class is created when a dropTarget
  * is hit, then the observers, can call the makeTheMagic metod.

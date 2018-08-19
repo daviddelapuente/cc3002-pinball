@@ -1,6 +1,6 @@
-package logic.gameelements.target;
+package gameLogic.logic.gameelements.target;
 
-import logic.gameelements.Hittable;
+import gameLogic.logic.gameelements.Hittable;
 
 /**
  * Interface that represents operations related to a target behavior.

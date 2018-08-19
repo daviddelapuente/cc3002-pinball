@@ -1,7 +1,7 @@
 package testLogic.testGameelements.testTargets;
 
-import logic.gameelements.target.DropTarget;
-import logic.gameelements.target.Target;
+import gameLogic.logic.gameelements.target.DropTarget;
+import gameLogic.logic.gameelements.target.Target;
 import org.junit.Before;
 import org.junit.Test;
 

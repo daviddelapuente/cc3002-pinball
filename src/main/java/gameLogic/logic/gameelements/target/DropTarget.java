@@ -1,9 +1,6 @@
-package logic.gameelements.target;
+package gameLogic.logic.gameelements.target;
 
-import controller.visitor.Visitor;
-import controller.visitor.VisitorDropTarget;
-import controller.visitor.VisitorDropTargetBonus;
-import controller.visitor.VisitorExtraBallBonus;
+import gameLogic.logic.controller.visitor.*;
 
 import java.util.Random;
 /**
@@ -46,7 +43,7 @@ public class DropTarget extends AbstractTarget implements Target {
         int hitValue=0;
         if (this.isActive){
             //seed = 900000
-            Random generator = new Random(900000);
+            Random generator = new Random();
             double a= generator.nextDouble();
 
             if(a<0.3){
@@ -98,5 +95,13 @@ public class DropTarget extends AbstractTarget implements Target {
             this.score=0;
         }
         return hitValue;
+    }
+
+    @Override
+    public void reset() {
+        setChanged();
+        Visitor v = new VisitorResetDropTarget();
+        notifyObservers(v);
+        this.isActive=true;
     }
 }

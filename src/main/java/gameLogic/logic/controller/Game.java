@@ -1,30 +1,32 @@
-package controller;
+package gameLogic.logic.controller;
 
-import controller.visitor.Visitor;
-import logic.bonus.Bonus;
-import logic.bonus.DropTargetBonus;
-import logic.bonus.ExtraBallBonus;
-import logic.bonus.JackPotBonus;
-import logic.gameelements.bumper.Bumper;
-import logic.gameelements.target.Target;
-import logic.table.NullGameTable;
-import logic.table.Table;
+import gameLogic.logic.controller.visitor.Visitor;
+import gameLogic.logic.bonus.Bonus;
+import gameLogic.logic.bonus.DropTargetBonus;
+import gameLogic.logic.bonus.ExtraBallBonus;
+import gameLogic.logic.bonus.JackPotBonus;
+import gameLogic.logic.gameelements.bumper.Bumper;
+import gameLogic.logic.gameelements.target.Target;
+import gameLogic.logic.table.GameTable;
+import gameLogic.logic.table.NullGameTable;
+import gameLogic.logic.table.Table;
 
 import java.util.List;
 import java.util.Observable;
 import java.util.Observer;
 /**
- * Game logic controller class.
+ * Game gameLogic.logic gameLogic.logic.controller class.
  *
  * @author David de la puente
  */
-public class Game implements Observer{
+public class Game implements Observer,IGame{
     private Table table;
     private Bonus dropTargetBonus;
     private ExtraBallBonus extraBallBonus;
     private Bonus jackPotBonus;
     private int availableBalls;
     private int currentScore;
+    private boolean isActivateDropBonus;
 
     /**
      * the constructor of the class, it inisialize the bonus, and the table as a null table
@@ -36,8 +38,11 @@ public class Game implements Observer{
 
         ((JackPotBonus) this.jackPotBonus).addObserver(this);
         ((DropTargetBonus) this.dropTargetBonus).addObserver(this);
-
+        this.availableBalls=3;
+        this.currentScore=0;
         this.table= new NullGameTable();
+
+        this.isActivateDropBonus=false;
     }
 
     /**
@@ -55,7 +60,7 @@ public class Game implements Observer{
      */
 
     public void setGameTable(Table newTable) {
-        NullGameTable t=(NullGameTable) newTable;
+        GameTable t= (GameTable) newTable;
         t.addObserver(this);
         this.table= t;
 
@@ -133,7 +138,9 @@ public class Game implements Observer{
      * decreese in one the number of ballsavailable in the game
      */
     public void dropBall() {
-        this.availableBalls-=1;
+        if(this.availableBalls>0){
+            this.availableBalls-=1;
+        }
     }
 
     /**
@@ -185,5 +192,31 @@ public class Game implements Observer{
      */
     public void plusScore(int score) {
         this.currentScore+=score;
+    }
+
+    public int getPopBumpers(){
+        return table.getPopBumpers();
+    }
+
+    public int getKickerBumpers(){
+        return table.getKickerBumpers();
+    }
+
+    public int getDropTargets() {
+        return table.getDropTargets();
+    }
+
+    public int getSpotTargets() {
+        return table.getSpotTargets();
+    }
+
+    @Override
+    public boolean getIsActivateDropBonus() {
+        return this.isActivateDropBonus;
+    }
+
+    @Override
+    public void setIsActivateDropBonus(boolean b) {
+        this.isActivateDropBonus=b;
     }
 }

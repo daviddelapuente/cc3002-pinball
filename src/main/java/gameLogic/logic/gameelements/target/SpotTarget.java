@@ -1,8 +1,9 @@
-package logic.gameelements.target;
+package gameLogic.logic.gameelements.target;
 
-import controller.visitor.Visitor;
-import controller.visitor.VisitorJackPotBonus;
-import controller.visitor.VisitorSpotTarget;
+import gameLogic.logic.controller.visitor.Visitor;
+import gameLogic.logic.controller.visitor.VisitorJackPotBonus;
+import gameLogic.logic.controller.visitor.VisitorResetSpotTarget;
+import gameLogic.logic.controller.visitor.VisitorSpotTarget;
 
 import java.util.Random;
 
@@ -72,7 +73,7 @@ public class SpotTarget extends AbstractTarget implements Target{
             Random generator = new Random();
             double a= generator.nextDouble();
 
-            if(a<0.02){
+            if(a<0.2){
                 setChanged();
                 Visitor bonusVisitor=new VisitorJackPotBonus();
                 notifyObservers(bonusVisitor);
@@ -84,5 +85,13 @@ public class SpotTarget extends AbstractTarget implements Target{
             notifyObservers(v);
         }
         return this.getScore();
+    }
+
+    @Override
+    public void reset() {
+        setChanged();
+        Visitor v = new VisitorResetSpotTarget();
+        notifyObservers(v);
+        this.isActive=true;
     }
 }

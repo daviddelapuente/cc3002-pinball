@@ -1,9 +1,9 @@
-package logic.gameelements.bumper;
+package gameLogic.logic.gameelements.bumper;
 
-import controller.visitor.Visitor;
-import controller.visitor.VisitorPopBumper;
-import logic.gameelements.bumper.bumpermode.BumperModeNotUpgrade;
-import logic.gameelements.bumper.bumpermode.BumperModeUpgrade;
+import gameLogic.logic.controller.visitor.Visitor;
+import gameLogic.logic.controller.visitor.VisitorPopBumper;
+import gameLogic.logic.gameelements.bumper.bumpermode.BumperModeNotUpgrade;
+import gameLogic.logic.gameelements.bumper.bumpermode.BumperModeUpgrade;
 
 /**
  * this class extendes the abstractBumper but this metods are unique to this class
@@ -43,15 +43,16 @@ public class PopBumper extends AbstractBumper{
         if(this.remainingHitsToUpgrade()>0){
             this.hitsToUpgrade-=1;
         }
-
+        this.bonusOfHit();
         setChanged();
         Visitor v=new VisitorPopBumper();
         this.accept(v);
         notifyObservers(v);
 
-        this.bonusOfHit();
         return this.getScore();
     }
+
+
 
     /**
      * same as upside but has a seed

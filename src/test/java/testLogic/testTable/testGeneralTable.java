@@ -1,9 +1,11 @@
 package testLogic.testTable;
 
-import logic.table.NullGameTable;
-import logic.table.Table;
+import gameLogic.logic.table.NullGameTable;
+import gameLogic.logic.table.Table;
 import org.junit.Before;
 import org.junit.Test;
+
+import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -17,11 +19,11 @@ public class testGeneralTable {
 
     @Test
     public void testGeters(){
-        assertEquals(null,table.getTableName());
+        assertEquals("",table.getTableName());
         assertEquals(0,table.getNumberOfDropTargets());
         assertEquals(0,table.getCurrentlyDroppedDropTargets());
-        assertEquals(null,table.getBumpers());
-        assertEquals(null,table.getTargets());
+        assertEquals(new ArrayList<>(),table.getBumpers());
+        assertEquals(new ArrayList<>(),table.getTargets());
     }
 
     @Test

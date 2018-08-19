@@ -1,6 +1,6 @@
 package testLogic.testGameelements.testTargets;
 
-import logic.gameelements.target.Target;
+import gameLogic.logic.gameelements.target.Target;
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;

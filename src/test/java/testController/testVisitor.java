@@ -1,10 +1,10 @@
 package testController;
 
-import controller.visitor.Visitor;
-import logic.gameelements.bumper.KickerBumper;
-import logic.gameelements.bumper.PopBumper;
-import logic.gameelements.target.DropTarget;
-import logic.gameelements.target.SpotTarget;
+import gameLogic.logic.controller.visitor.Visitor;
+import gameLogic.logic.gameelements.bumper.KickerBumper;
+import gameLogic.logic.gameelements.bumper.PopBumper;
+import gameLogic.logic.gameelements.target.DropTarget;
+import gameLogic.logic.gameelements.target.SpotTarget;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

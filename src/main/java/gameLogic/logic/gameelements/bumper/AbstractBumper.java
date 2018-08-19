@@ -1,10 +1,10 @@
-package logic.gameelements.bumper;
+package gameLogic.logic.gameelements.bumper;
 
-import controller.visitor.Visitor;
-import controller.visitor.VisitorExtraBallBonus;
-import logic.gameelements.bumper.bumpermode.BumperMode;
-import logic.gameelements.bumper.bumpermode.BumperModeNotUpgrade;
-import logic.gameelements.bumper.bumpermode.BumperModeUpgrade;
+import gameLogic.logic.controller.visitor.Visitor;
+import gameLogic.logic.controller.visitor.VisitorExtraBallBonus;
+import gameLogic.logic.gameelements.bumper.bumpermode.BumperMode;
+import gameLogic.logic.gameelements.bumper.bumpermode.BumperModeNotUpgrade;
+import gameLogic.logic.gameelements.bumper.bumpermode.BumperModeUpgrade;
 
 import java.util.Observable;
 import java.util.Random;
@@ -16,8 +16,8 @@ import java.util.Random;
  * <p>Objets that are Bumpers should extends this interface</p>
  *
  * @author David de la puente
- * @see logic.gameelements.bumper.KickerBumper
- * @see logic.gameelements.bumper.PopBumper
+ * @see gameLogic.logic.gameelements.bumper.KickerBumper
+ * @see gameLogic.logic.gameelements.bumper.PopBumper
  */
 public abstract class AbstractBumper extends Observable implements Bumper{
     int hitsToUpgrade;
@@ -36,7 +36,7 @@ public abstract class AbstractBumper extends Observable implements Bumper{
 
     /**
      * this metod upgrade a bumper, so it change the bumperMode
-     * @see logic.gameelements.bumper.bumpermode
+     * @see gameLogic.logic.gameelements.bumper.bumpermode
      */
     @Override
     public void upgrade() {
@@ -45,7 +45,7 @@ public abstract class AbstractBumper extends Observable implements Bumper{
 
     /**
      * this metod downgrade a bumper, so it change the bumperMode
-     * @see logic.gameelements.bumper.bumpermode
+     * @see gameLogic.logic.gameelements.bumper.bumpermode
      */
     @Override
     public void downgrade() {

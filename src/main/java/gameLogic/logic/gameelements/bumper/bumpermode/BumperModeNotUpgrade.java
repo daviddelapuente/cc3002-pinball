@@ -1,4 +1,4 @@
-package logic.gameelements.bumper.bumpermode;
+package gameLogic.logic.gameelements.bumper.bumpermode;
 /**
  * class that represent a bumper that is not upgraded
  *

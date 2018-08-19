@@ -1,6 +1,6 @@
 package testLogic.testGameelements.testBumpers;
 
-import logic.gameelements.bumper.KickerBumper;
+import gameLogic.logic.gameelements.bumper.KickerBumper;
 import org.junit.Before;
 import org.junit.Test;
 

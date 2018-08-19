@@ -1,6 +1,6 @@
-package logic.bonus;
+package gameLogic.logic.bonus;
 
-import controller.Game;
+import gameLogic.logic.controller.Game;
 /**
  * this class extendes the abstracTarget but this metods are unique to this class
  *
@@ -19,12 +19,13 @@ public class DropTargetBonus extends AbstractBonus implements Bonus{
     /**
      * this metod define the action of trigger a dropTargetBonus, upgrading
      * all the bumpers and sending a message to the game whit the new score
-     * @param game the game controller object
+     * @param game the game gameLogic.logic.controller object
      */
     @Override
     public void trigger(Game game) {
         this.timesTriggered+=1;
         game.getCurrentTable().upgradeAllBumpers();
+        game.setIsActivateDropBonus(true);
         setChanged();
         game.plusScore(1000000);
     }

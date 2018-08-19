@@ -1,6 +1,6 @@
-package logic.bonus;
+package gameLogic.logic.bonus;
 
-import controller.Game;
+import gameLogic.logic.controller.Game;
 
 /**
  * Interface that represents a bonus object.
@@ -21,7 +21,7 @@ public interface Bonus {
     /**
      * Trigger the specific action the bonus does and applies it to the {@link Game} object.
      *
-     * @param game the game controller object
+     * @param game the game gameLogic.logic.controller object
      */
     void trigger(Game game);
 }

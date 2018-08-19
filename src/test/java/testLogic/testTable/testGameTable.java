@@ -1,10 +1,10 @@
 package testLogic.testTable;
 
-import logic.gameelements.bumper.PopBumper;
-import logic.gameelements.target.DropTarget;
-import logic.gameelements.target.SpotTarget;
-import logic.table.GameTable;
-import logic.table.Table;
+import gameLogic.logic.gameelements.bumper.PopBumper;
+import gameLogic.logic.gameelements.target.DropTarget;
+import gameLogic.logic.gameelements.target.SpotTarget;
+import gameLogic.logic.table.GameTable;
+import gameLogic.logic.table.Table;
 import org.junit.Before;
 import org.junit.Test;
 

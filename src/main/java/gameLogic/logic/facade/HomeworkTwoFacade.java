@@ -1,25 +1,25 @@
-package facade;
+package gameLogic.logic.facade;
 
-import logic.bonus.Bonus;
-import logic.gameelements.bumper.Bumper;
-import logic.gameelements.target.Target;
-import logic.table.GameTable;
-import logic.table.Table;
-import controller.Game;
+import gameLogic.logic.bonus.Bonus;
+import gameLogic.logic.gameelements.bumper.Bumper;
+import gameLogic.logic.gameelements.target.Target;
+import gameLogic.logic.table.GameTable;
+import gameLogic.logic.table.Table;
+import gameLogic.logic.controller.Game;
 import java.util.List;
 
 /**
- * Facade class to expose the logic of the game to a GUI in the upcoming homework.
+ * Facade class to expose the gameLogic.logic of the game to a GUI in the upcoming homework.
  *
  * @author Juan-Pablo Silva
  */
 public class HomeworkTwoFacade {
     /**
-     * Instance of the game controller.
+     * Instance of the game gameLogic.logic.controller.
      *
      * @see Game
      */
-    private Game game;
+    private Game game=new Game();
 
     /**
      * Gets whether the current table is playable or not.
@@ -31,7 +31,7 @@ public class HomeworkTwoFacade {
     }
 
     /**
-     * Gets the instance of {@link logic.bonus.DropTargetBonus} currently in the game.
+     * Gets the instance of {@link gameLogic.logic.bonus.DropTargetBonus} currently in the game.
      *
      * @return the DropTargetBonus instance
      */
@@ -40,7 +40,7 @@ public class HomeworkTwoFacade {
     }
 
     /**
-     * Gets the instance of {@link logic.bonus.ExtraBallBonus} currently in the game.
+     * Gets the instance of {@link gameLogic.logic.bonus.ExtraBallBonus} currently in the game.
      *
      * @return the ExtraBallBonus instance
      */
@@ -49,7 +49,7 @@ public class HomeworkTwoFacade {
     }
 
     /**
-     * Gets the instance of {@link logic.bonus.JackPotBonus} currently in the game.
+     * Gets the instance of {@link gameLogic.logic.bonus.JackPotBonus} currently in the game.
      *
      * @return the JackPotBonus instance
      */
@@ -62,11 +62,12 @@ public class HomeworkTwoFacade {
      *
      * @param name            the name of the table
      * @param numberOfBumpers the number of bumpers in the table
-     * @param prob            the probability a {@link logic.gameelements.bumper.PopBumper}
+     * @param prob            the probability a {@link gameLogic.logic.gameelements.bumper.PopBumper}
      * @return a new table determined by the parameters
      */
     public Table newPlayableTableWithNoTargets(String name, int numberOfBumpers, double prob) {
         Table table =new GameTable(name,numberOfBumpers,prob,0,0);
+        table.makePlayable();
         return table;
     }
 
@@ -75,13 +76,14 @@ public class HomeworkTwoFacade {
      *
      * @param name                the name of the table
      * @param numberOfBumpers     the number of bumpers in the table
-     * @param prob                the probability a {@link logic.gameelements.bumper.PopBumper}
-     * @param numberOfTargets     the number of {@link logic.gameelements.target.SpotTarget}
-     * @param numberOfDropTargets the number of {@link logic.gameelements.target.DropTarget}
+     * @param prob                the probability a {@link gameLogic.logic.gameelements.bumper.PopBumper}
+     * @param numberOfTargets     the number of {@link gameLogic.logic.gameelements.target.SpotTarget}
+     * @param numberOfDropTargets the number of {@link gameLogic.logic.gameelements.target.DropTarget}
      * @return a new table determined by the parameters
      */
     public Table newFullPlayableTable(String name, int numberOfBumpers, double prob, int numberOfTargets, int numberOfDropTargets) {
         Table table = new GameTable(name,numberOfBumpers,prob,numberOfTargets,numberOfDropTargets);
+        table.makePlayable();
         return table;
     }
 

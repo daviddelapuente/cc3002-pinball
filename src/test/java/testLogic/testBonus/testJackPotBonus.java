@@ -1,8 +1,8 @@
 package testLogic.testBonus;
 
-import controller.Game;
-import logic.bonus.Bonus;
-import logic.bonus.JackPotBonus;
+import gameLogic.logic.controller.Game;
+import gameLogic.logic.bonus.Bonus;
+import gameLogic.logic.bonus.JackPotBonus;
 import org.junit.Before;
 import org.junit.Test;
 

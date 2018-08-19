@@ -1,8 +1,9 @@
-package logic.table;
+package gameLogic.logic.table;
 
-import logic.gameelements.bumper.Bumper;
-import logic.gameelements.target.Target;
+import gameLogic.logic.gameelements.bumper.Bumper;
+import gameLogic.logic.gameelements.target.Target;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Observable;
 import java.util.Observer;
@@ -12,11 +13,12 @@ import java.util.Observer;
  * @author David de la puente
  */
 public class NullGameTable extends Observable implements Observer,Table {
-    protected int currentlyDroppedDropTargets;
+    private List<Bumper> bumpers=new ArrayList<>();
+    private List<Target> targets=new ArrayList<>();
 
     @Override
     public String getTableName() {
-        return null;
+        return "";
     }
 
     @Override
@@ -31,12 +33,12 @@ public class NullGameTable extends Observable implements Observer,Table {
 
     @Override
     public List<Bumper> getBumpers() {
-        return null;
+        return this.bumpers;
     }
 
     @Override
     public List<Target> getTargets() {
-        return null;
+        return this.targets;
     }
 
     @Override
@@ -75,6 +77,42 @@ public class NullGameTable extends Observable implements Observer,Table {
 
     @Override
     public void decreseDroppedDropTarget() {
+
+    }
+
+    @Override
+    public int getPopBumpers(){
+        return 0;
+    }
+
+    @Override
+    public int getKickerBumpers(){
+        return 0;
+    }
+
+    @Override
+    public int getDropTargets(){return 0;}
+
+    @Override
+    public int getSpotTargets(){return 0;}
+
+    @Override
+    public int getCurrentlyDroppedSpotTargets() {
+        return 0;
+    }
+
+    @Override
+    public void decreseDroppedSpotTarget() {
+
+    }
+
+    @Override
+    public void resetSpotTargets() {
+
+    }
+
+    @Override
+    public void increseDroppedSpotTargets() {
 
     }
 }

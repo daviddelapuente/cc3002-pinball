@@ -1,7 +1,7 @@
-package controller.visitor;
+package gameLogic.logic.controller.visitor;
 
-import controller.Game;
-import logic.gameelements.bumper.KickerBumper;
+import gameLogic.logic.controller.Game;
+import gameLogic.logic.gameelements.bumper.KickerBumper;
 
 /**
  * visitor class, this class is created when a kickerBumper

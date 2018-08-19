@@ -1,11 +1,11 @@
-package logic.table;
+package gameLogic.logic.table;
 
-import logic.gameelements.bumper.Bumper;
-import logic.gameelements.bumper.KickerBumper;
-import logic.gameelements.bumper.PopBumper;
-import logic.gameelements.target.DropTarget;
-import logic.gameelements.target.SpotTarget;
-import logic.gameelements.target.Target;
+import gameLogic.logic.gameelements.bumper.Bumper;
+import gameLogic.logic.gameelements.bumper.KickerBumper;
+import gameLogic.logic.gameelements.bumper.PopBumper;
+import gameLogic.logic.gameelements.target.DropTarget;
+import gameLogic.logic.gameelements.target.SpotTarget;
+import gameLogic.logic.gameelements.target.Target;
 
 import java.util.*;
 
@@ -15,7 +15,7 @@ import java.util.*;
  *
  * @author David de la puente
  */
-public class GameTable extends NullGameTable {
+public class GameTable extends Observable implements Observer,Table {
     private boolean isPlayable=false;
     private String name;
 
@@ -26,6 +26,14 @@ public class GameTable extends NullGameTable {
 
     private List<Bumper> bumpers;
     private List<Target> targets;
+
+    private int popBumpers=0;
+    private int kickerBumpers=0;
+
+    private int spotTargets=0;
+    private int dropTargets=0;
+    protected int currentlyDroppedDropTargets;
+    protected int currentlyDroppedSpotTargets;
 
     /**
      * the constructor, that resive the initial parameters, and a seed, the seed make the random things, pseudo random
@@ -45,6 +53,7 @@ public class GameTable extends NullGameTable {
         this.numberOfDropTargets=numberOfDropTargets;
 
         this.currentlyDroppedDropTargets=0;
+        this.currentlyDroppedSpotTargets=0;
         this.bumpers=new ArrayList<>();
         this.targets=new ArrayList<>();
 
@@ -57,11 +66,13 @@ public class GameTable extends NullGameTable {
                 Bumper b=new PopBumper();
                 ((PopBumper) b).addObserver(this);
                 this.bumpers.add(b);
+                popBumpers++;
 
             }else{
                 Bumper b=new KickerBumper();
                 ((KickerBumper) b).addObserver(this);
                 this.bumpers.add(b);
+                kickerBumpers++;
             }
         }
 
@@ -69,12 +80,14 @@ public class GameTable extends NullGameTable {
             Target t=new SpotTarget();
             ((SpotTarget) t).addObserver( this);
             this.targets.add(t);
+            spotTargets++;
         }
         int numberOfTargets=numberOfDropTargets+numberOfSpotTargets;
         for(int i=numberOfSpotTargets;i<numberOfTargets;i++){
             Target t= new DropTarget();
             ((DropTarget) t).addObserver(this);
             this.targets.add(t);
+            dropTargets++;
         }
     }
 
@@ -108,11 +121,13 @@ public class GameTable extends NullGameTable {
                 Bumper b=new PopBumper();
                 ((PopBumper) b).addObserver( this);
                 this.bumpers.add(b);
+                popBumpers++;
 
             }else{
                 Bumper b=new KickerBumper();
                 ((KickerBumper) b).addObserver(this);
                 this.bumpers.add(b);
+                kickerBumpers++;
             }
         }
 
@@ -120,12 +135,14 @@ public class GameTable extends NullGameTable {
             Target t=new SpotTarget();
             ((SpotTarget) t).addObserver(this);
             this.targets.add(t);
+            spotTargets++;
         }
         int numberOfTargets=numberOfDropTargets+numberOfSpotTargets;
         for(int i=numberOfSpotTargets;i<numberOfTargets;i++){
             Target t= new DropTarget();
             ((DropTarget) t).addObserver(this);
             this.targets.add(t);
+            dropTargets++;
         }
     }
 
@@ -160,12 +177,28 @@ public class GameTable extends NullGameTable {
     }
 
     @Override
+    public void increseDroppedSpotTargets(){this.currentlyDroppedSpotTargets+=1;}
+
+    @Override
     public void resetDropTargets() {
         int numberOfTargets=this.numberOfSpotTargets+this.numberOfDropTargets;
         for(int i=this.numberOfSpotTargets;i<numberOfTargets;i++){
-            targets.get(i).reset();
+            if(!targets.get(i).isActive()){
+                targets.get(i).reset();
+            }
         }
     }
+
+    @Override
+    public void resetSpotTargets() {
+        for(int i=0;i<this.numberOfSpotTargets;i++){
+            if(!targets.get(i).isActive()){
+                targets.get(i).reset();
+            }
+        }
+    }
+
+
 
     @Override
     public void upgradeAllBumpers() {
@@ -193,5 +226,35 @@ public class GameTable extends NullGameTable {
     @Override
     public void decreseDroppedDropTarget(){
         this.currentlyDroppedDropTargets-=1;
+    }
+
+    @Override
+    public void decreseDroppedSpotTarget(){this.currentlyDroppedSpotTargets-=1;
+    }
+
+
+    @Override
+    public int getPopBumpers(){
+        return this.popBumpers;
+    }
+
+    @Override
+    public int getKickerBumpers(){
+        return this.kickerBumpers;
+    }
+
+    @Override
+    public int getSpotTargets(){
+        return this.spotTargets;
+    }
+
+    @Override
+    public int getCurrentlyDroppedSpotTargets() {
+        return this.currentlyDroppedSpotTargets;
+    }
+
+    @Override
+    public int getDropTargets(){
+        return this.dropTargets;
     }
 }

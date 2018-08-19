@@ -1,7 +1,7 @@
-package logic.gameelements.target;
+package gameLogic.logic.gameelements.target;
 
-import controller.visitor.Visitor;
-import controller.visitor.VisitorResetDropTarget;
+import gameLogic.logic.controller.visitor.Visitor;
+import gameLogic.logic.controller.visitor.VisitorResetDropTarget;
 
 import java.util.Observable;
 /**
@@ -11,8 +11,8 @@ import java.util.Observable;
  * <p>Objets that are targets should extends this interface</p>
  *
  * @author David de la puente
- * @see logic.gameelements.target.DropTarget
- * @see logic.gameelements.target.SpotTarget
+ * @see gameLogic.logic.gameelements.target.DropTarget
+ * @see gameLogic.logic.gameelements.target.SpotTarget
  */
 public abstract class AbstractTarget extends Observable implements Target {
     protected boolean isActive;
@@ -23,13 +23,6 @@ public abstract class AbstractTarget extends Observable implements Target {
         return this.isActive;
     }
 
-    @Override
-    public void reset() {
-        setChanged();
-        Visitor v = new VisitorResetDropTarget();
-        notifyObservers(v);
-        this.isActive=true;
-    }
 
     @Override
     public abstract  int hit();

@@ -1,6 +1,6 @@
-package logic.bonus;
+package gameLogic.logic.bonus;
 
-import controller.Game;
+import gameLogic.logic.controller.Game;
 
 import java.util.Observable;
 /**
@@ -10,9 +10,9 @@ import java.util.Observable;
  * <p>Objets that are Bonus should extends this interface</p>
  *
  * @author David de la puente
- * @see logic.bonus.DropTargetBonus
- * @see logic.bonus.ExtraBallBonus
- * @see logic.bonus.JackPotBonus
+ * @see gameLogic.logic.bonus.DropTargetBonus
+ * @see gameLogic.logic.bonus.ExtraBallBonus
+ * @see gameLogic.logic.bonus.JackPotBonus
  */
 
 public class AbstractBonus extends Observable implements Bonus {

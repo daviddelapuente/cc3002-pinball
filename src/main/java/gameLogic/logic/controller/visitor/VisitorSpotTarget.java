@@ -1,7 +1,7 @@
-package controller.visitor;
+package gameLogic.logic.controller.visitor;
 
-import controller.Game;
-import logic.gameelements.target.SpotTarget;
+import gameLogic.logic.controller.Game;
+import gameLogic.logic.gameelements.target.SpotTarget;
 
 /**
  * visitor class, this class is created when a spotTarget
@@ -21,6 +21,7 @@ public class VisitorSpotTarget extends Visitor {
      */
     @Override
     public void makeTheMagic(Game g){
+        g.getCurrentTable().increseDroppedSpotTargets();
         g.plusScore(pts);
     }
 }

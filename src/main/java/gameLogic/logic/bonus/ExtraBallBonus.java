@@ -1,6 +1,6 @@
-package logic.bonus;
+package gameLogic.logic.bonus;
 
-import controller.Game;
+import gameLogic.logic.controller.Game;
 /**
  * this class extendes the abstracTarget but this metods are unique to this class
  *
@@ -19,7 +19,7 @@ public class ExtraBallBonus extends AbstractBonus implements Bonus{
     /**
      * this metod define the action of trigger an ExtraBall bonus, adding a ball
      * to the game
-     * @param game the game controller object
+     * @param game the game gameLogic.logic.controller object
      */
     @Override
     public void trigger(Game game) {

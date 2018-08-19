@@ -1,12 +1,12 @@
 package testController;
 
-import controller.Game;
-import logic.gameelements.bumper.Bumper;
-import logic.gameelements.bumper.KickerBumper;
-import logic.gameelements.bumper.PopBumper;
-import logic.gameelements.target.DropTarget;
-import logic.gameelements.target.SpotTarget;
-import logic.table.*;
+import gameLogic.logic.controller.Game;
+import gameLogic.logic.gameelements.bumper.Bumper;
+import gameLogic.logic.gameelements.bumper.KickerBumper;
+import gameLogic.logic.gameelements.bumper.PopBumper;
+import gameLogic.logic.gameelements.target.DropTarget;
+import gameLogic.logic.gameelements.target.SpotTarget;
+import gameLogic.logic.table.*;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -29,10 +29,6 @@ public class testGame {
 
     @Test
     public void  testIsPlayableTable(){
-        assertFalse(game.isPlayableTable());
-
-        Table nullTable=new NullGameTable();
-        game.setGameTable(nullTable);
         assertFalse(game.isPlayableTable());
 
         game.setGameTable(table);
@@ -204,22 +200,7 @@ public class testGame {
     @Test
     public void testBumperBonus(){
         game.setGameTable(table);
-        assertEquals(0,game.getCurrentScore());
 
-        //the first bumper is a kicker
-        for(int i=0;i<5;i++){
-            game.getCurrentTable().getBumpers().get(0).hit(900000);
-        }
-        //it should be upgrade, therefore the extraBallBonus was triggered
-        //and the random seed, make it hapen
-        assertEquals(4,game.getAvailableBalls());
-
-        //the second bumper is a pop
-        for(int i=0;i<3;i++){
-            game.getCurrentTable().getBumpers().get(1).hit(900000);
-        }
-        //it should be upgrade, therefore the extraBallBonus was triggered
-        assertEquals(5,game.getAvailableBalls());
     }
 
     @Test

@@ -1,7 +1,7 @@
-package logic.gameelements.bumper;
+package gameLogic.logic.gameelements.bumper;
 
-import logic.gameelements.Hittable;
-import logic.gameelements.bumper.bumpermode.BumperMode;
+import gameLogic.logic.gameelements.Hittable;
+import gameLogic.logic.gameelements.bumper.bumpermode.BumperMode;
 
 /**
  * Interface that represents operations related to a bumper behavior.
@@ -38,7 +38,7 @@ public interface Bumper extends Hittable {
     /**
      * return the the mode of a bumper (if is upgrade or not)
      * the modes has the information of the score of the bumper
-     * @see logic.gameelements.bumper.bumpermode
+     * @see gameLogic.logic.gameelements.bumper.bumpermode
      */
     BumperMode getBumperMode();
 

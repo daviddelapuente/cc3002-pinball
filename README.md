@@ -73,7 +73,7 @@ game:
 game es una sola clase, que observa a table, para saber que elemento fue golpeado se uso el
 patron visitor el cual tiene el metodo makeTheMagic() que es distinto para cada visitor
 y se encarga de activar los bonus y agregar puntaje a game, the esta forma los elementos del
-paquete logic no tienen que estar pendientes de sumar puntaje al juego sino que lo hace visitor.
+paquete gameLogic.logic no tienen que estar pendientes de sumar puntaje al juego sino que lo hace visitor.
 
 visitor:
 se implemento un visitor para cada gameelement y bonus.

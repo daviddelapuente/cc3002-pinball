@@ -1,4 +1,4 @@
-package logic.gameelements.bumper.bumpermode;
+package gameLogic.logic.gameelements.bumper.bumpermode;
 
 /**
  * Abstract Class that has the atributes an common metods of bumperModes
