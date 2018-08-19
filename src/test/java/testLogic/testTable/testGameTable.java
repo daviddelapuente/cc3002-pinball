@@ -49,4 +49,25 @@ public class testGameTable {
             assertTrue(targets.get(i) instanceof DropTarget);
         }
     }
+
+    @Test
+    public void testHitables(){
+        assertEquals(5, gameTable.getPopBumpers());
+        assertEquals(0,gameTable.getKickerBumpers());
+        assertEquals(5,gameTable.getSpotTargets());
+        assertEquals(5,gameTable.getDropTargets());
+        assertEquals(5,gameTable.getNumberOfDropTargets());
+
+        assertEquals(0,gameTable.getCurrentlyDroppedDropTargets());
+        gameTable.increseDroppedDropTargets();
+        assertEquals(1,gameTable.getCurrentlyDroppedDropTargets());
+        gameTable.decreseDroppedDropTarget();
+        assertEquals(0,gameTable.getCurrentlyDroppedDropTargets());
+
+        assertEquals(0,gameTable.getCurrentlyDroppedSpotTargets());
+        gameTable.increseDroppedSpotTargets();
+        assertEquals(1,gameTable.getCurrentlyDroppedSpotTargets());
+        gameTable.decreseDroppedSpotTarget();
+        assertEquals(0,gameTable.getCurrentlyDroppedSpotTargets());
+    }
 }

@@ -237,4 +237,22 @@ public class testGame {
         assertEquals(1,game.getCurrentTable().getCurrentlyDroppedDropTargets());
 
     }
+
+    @Test
+    public void testNewFeatures(){
+        game.setGameTable(table);
+        assertEquals(5,game.getDropTargets());
+        assertEquals(5,game.getSpotTargets());
+        assertEquals(5,game.getDropTargets());
+        assertEquals(5,game.getSpotTargets());
+        game.plusScore(100);
+        assertEquals(100,game.getCurrentScore());
+        game.addBall();
+        assertEquals(4,game.getAvailableBalls());
+        game.triggerGetExtraBallBonus();
+        game.triggerDropTargetBonus();
+        game.triggerJackPotBonus();
+        assertEquals(5,game.getAvailableBalls());
+        assertFalse(!game.getIsActivateDropBonus());
+    }
 }

@@ -42,6 +42,11 @@ public class NullGameTable extends Observable implements Observer,Table {
     }
 
     @Override
+    public boolean isPlayableTable() {
+        return false;
+    }
+
+    @Override
     public void resetDropTargets() {
 
     }
@@ -52,23 +57,8 @@ public class NullGameTable extends Observable implements Observer,Table {
     }
 
     @Override
-    public boolean isPlayableTable() {
-        return false;
-    }
-
-    @Override
-    public void makePlayable() {
-
-    }
-
-    /**
-     * this metod is called when the observable objetc, makes notiications
-     * @param o is the object that notify
-     * @param arg the informacion traspased
-     */
-    @Override
-    public void update(Observable o, Object arg) {
-
+    public int getCurrentlyDroppedSpotTargets() {
+        return 0;
     }
 
     @Override
@@ -77,6 +67,11 @@ public class NullGameTable extends Observable implements Observer,Table {
 
     @Override
     public void decreseDroppedDropTarget() {
+
+    }
+
+    @Override
+    public void makePlayable() {
 
     }
 
@@ -97,11 +92,6 @@ public class NullGameTable extends Observable implements Observer,Table {
     public int getSpotTargets(){return 0;}
 
     @Override
-    public int getCurrentlyDroppedSpotTargets() {
-        return 0;
-    }
-
-    @Override
     public void decreseDroppedSpotTarget() {
 
     }
@@ -113,6 +103,16 @@ public class NullGameTable extends Observable implements Observer,Table {
 
     @Override
     public void increseDroppedSpotTargets() {
+
+    }
+
+    /**
+     * this metod is called when the observable objetc, makes notiications
+     * @param o is the object that notify
+     * @param arg the informacion traspased
+     */
+    @Override
+    public void update(Observable o, Object arg) {
 
     }
 }

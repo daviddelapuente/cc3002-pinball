@@ -9,8 +9,9 @@ import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
-public class testGeneralTable {
+public class testNullTable {
     Table table;
     @Before
     public void setUp() {
@@ -40,6 +41,25 @@ public class testGeneralTable {
         assertEquals(0,table.getCurrentlyDroppedDropTargets());
         table.increseDroppedDropTargets();
         assertEquals(0,table.getCurrentlyDroppedDropTargets());
+        table.increseDroppedDropTargets();
+        assertEquals(0,table.getCurrentlyDroppedDropTargets());
+        table.decreseDroppedDropTarget();
+        assertEquals(0,table.getCurrentlyDroppedDropTargets());
+    }
+
+    @Test
+    public void testHitables(){
+        assertEquals(0,table.getPopBumpers());
+        assertEquals(0,table.getSpotTargets());
+        assertEquals(0,table.getKickerBumpers());
+        assertEquals(0,table.getDropTargets());
+
+        table.increseDroppedSpotTargets();
+        assertEquals(0,table.getSpotTargets());
+        table.decreseDroppedSpotTarget();
+        assertEquals(0,table.getSpotTargets());
+        table.resetSpotTargets();
+        assertEquals(0,table.getSpotTargets());
     }
 
 

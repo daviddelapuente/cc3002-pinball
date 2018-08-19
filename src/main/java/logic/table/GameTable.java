@@ -152,13 +152,12 @@ public class GameTable extends Observable implements Observer,Table {
     }
 
     @Override
-    public int getNumberOfDropTargets() {
-        return this.numberOfDropTargets;
+    public boolean isPlayableTable() {
+        return isPlayable;
     }
 
-    @Override
-    public int getCurrentlyDroppedDropTargets() {
-        return this.currentlyDroppedDropTargets;
+    public void makePlayable(){
+        this.isPlayable=true;
     }
 
     @Override
@@ -172,12 +171,46 @@ public class GameTable extends Observable implements Observer,Table {
     }
 
     @Override
+    public int getPopBumpers(){
+        return this.popBumpers;
+    }
+
+    @Override
+    public int getKickerBumpers(){
+        return this.kickerBumpers;
+    }
+
+    @Override
+    public int getSpotTargets(){
+        return this.spotTargets;
+    }
+
+    @Override
+    public int getDropTargets(){
+        return this.dropTargets;
+    }
+
+    @Override
+    public int getNumberOfDropTargets() {
+        return this.numberOfDropTargets;
+    }
+
+    @Override
+    public int getCurrentlyDroppedDropTargets() {
+        return this.currentlyDroppedDropTargets;
+    }
+
+    @Override
     public void increseDroppedDropTargets(){
         this.currentlyDroppedDropTargets+=1;
     }
 
     @Override
-    public void increseDroppedSpotTargets(){this.currentlyDroppedSpotTargets+=1;}
+    public void decreseDroppedDropTarget(){
+        if(this.currentlyDroppedDropTargets>0){
+            this.currentlyDroppedDropTargets-=1;
+        }
+    }
 
     @Override
     public void resetDropTargets() {
@@ -186,6 +219,23 @@ public class GameTable extends Observable implements Observer,Table {
             if(!targets.get(i).isActive()){
                 targets.get(i).reset();
             }
+        }
+    }
+
+
+    @Override
+    public int getCurrentlyDroppedSpotTargets() {
+        return this.currentlyDroppedSpotTargets;
+    }
+
+
+    @Override
+    public void increseDroppedSpotTargets(){this.currentlyDroppedSpotTargets+=1;}
+
+    @Override
+    public void decreseDroppedSpotTarget(){
+        if(this.currentlyDroppedSpotTargets>0){
+            this.currentlyDroppedSpotTargets-=1;
         }
     }
 
@@ -207,54 +257,11 @@ public class GameTable extends Observable implements Observer,Table {
         }
     }
 
-    @Override
-    public boolean isPlayableTable() {
-        return isPlayable;
-    }
-
-    public void makePlayable(){
-        this.isPlayable=true;
-    }
 
 
     @Override
     public void update(Observable o, Object arg) {
         setChanged();
         notifyObservers(arg);
-    }
-
-    @Override
-    public void decreseDroppedDropTarget(){
-        this.currentlyDroppedDropTargets-=1;
-    }
-
-    @Override
-    public void decreseDroppedSpotTarget(){this.currentlyDroppedSpotTargets-=1;
-    }
-
-
-    @Override
-    public int getPopBumpers(){
-        return this.popBumpers;
-    }
-
-    @Override
-    public int getKickerBumpers(){
-        return this.kickerBumpers;
-    }
-
-    @Override
-    public int getSpotTargets(){
-        return this.spotTargets;
-    }
-
-    @Override
-    public int getCurrentlyDroppedSpotTargets() {
-        return this.currentlyDroppedSpotTargets;
-    }
-
-    @Override
-    public int getDropTargets(){
-        return this.dropTargets;
     }
 }

@@ -3,63 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="57a28998-a905-42f7-b32a-ec7f1bafadde" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameLogic/logic/bonus/AbstractBonus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/bonus/AbstractBonus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameLogic/logic/bonus/Bonus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/bonus/Bonus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameLogic/logic/bonus/DropTargetBonus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/bonus/DropTargetBonus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameLogic/logic/bonus/ExtraBallBonus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/bonus/ExtraBallBonus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameLogic/logic/bonus/JackPotBonus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/bonus/JackPotBonus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameLogic/logic/controller/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/controller/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameLogic/logic/controller/IGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/controller/IGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameLogic/logic/controller/nullGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/controller/nullGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameLogic/logic/controller/visitor/Visitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/controller/visitor/Visitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameLogic/logic/controller/visitor/VisitorDropTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/controller/visitor/VisitorDropTarget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameLogic/logic/controller/visitor/VisitorDropTargetBonus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/controller/visitor/VisitorDropTargetBonus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameLogic/logic/controller/visitor/VisitorExtraBallBonus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/controller/visitor/VisitorExtraBallBonus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameLogic/logic/controller/visitor/VisitorJackPotBonus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/controller/visitor/VisitorJackPotBonus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameLogic/logic/controller/visitor/VisitorKickerBumper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/controller/visitor/VisitorKickerBumper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameLogic/logic/controller/visitor/VisitorPopBumper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/controller/visitor/VisitorPopBumper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameLogic/logic/controller/visitor/VisitorResetDropTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/controller/visitor/VisitorResetDropTarget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameLogic/logic/controller/visitor/VisitorResetSpotTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/controller/visitor/VisitorResetSpotTarget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameLogic/logic/controller/visitor/VisitorSpotTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/controller/visitor/VisitorSpotTarget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameLogic/logic/facade/HomeworkTwoFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/facade/HomeworkTwoFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameLogic/logic/gameelements/Hittable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/Hittable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameLogic/logic/gameelements/bumper/AbstractBumper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/AbstractBumper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameLogic/logic/gameelements/bumper/Bumper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/Bumper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameLogic/logic/gameelements/bumper/KickerBumper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/KickerBumper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameLogic/logic/gameelements/bumper/PopBumper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/PopBumper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameLogic/logic/gameelements/bumper/bumpermode/AbstractBumperMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/bumpermode/AbstractBumperMode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameLogic/logic/gameelements/bumper/bumpermode/BumperMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/bumpermode/BumperMode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameLogic/logic/gameelements/bumper/bumpermode/BumperModeNotUpgrade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/bumpermode/BumperModeNotUpgrade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameLogic/logic/gameelements/bumper/bumpermode/BumperModeUpgrade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/bumpermode/BumperModeUpgrade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameLogic/logic/gameelements/target/AbstractTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/target/AbstractTarget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameLogic/logic/gameelements/target/DropTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/target/DropTarget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameLogic/logic/gameelements/target/SpotTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/target/SpotTarget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameLogic/logic/gameelements/target/Target.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/gameelements/target/Target.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameLogic/logic/table/GameTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/table/GameTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameLogic/logic/table/NullGameTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/table/NullGameTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gameLogic/logic/table/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/table/Table.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/BumperComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/BumperComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/DropTargetComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/DropTargetComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/KickerBumperComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/KickerBumperComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/PinballApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/PinballApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/PopBumperComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/PopBumperComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/SpotTargetComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/SpotTargetComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/imgs/pinbalBG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logic/table/GameTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/table/GameTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logic/table/NullGameTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/table/NullGameTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BigTestT2.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testController/testGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testController/testGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testController/testVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testController/testVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testLogic/testBonus/testDropTargetBonus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testLogic/testBonus/testDropTargetBonus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testLogic/testBonus/testExtraBallBonus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testLogic/testBonus/testExtraBallBonus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testLogic/testBonus/testJackPotBonus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testLogic/testBonus/testJackPotBonus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testLogic/testGameelements/testBumpers/testBumper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testLogic/testGameelements/testBumpers/testBumper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testLogic/testGameelements/testBumpers/testKickerBumper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testLogic/testGameelements/testBumpers/testKickerBumper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testLogic/testGameelements/testBumpers/testPopBumper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testLogic/testGameelements/testBumpers/testPopBumper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testLogic/testGameelements/testTargets/testDropTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testLogic/testGameelements/testTargets/testDropTarget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testLogic/testGameelements/testTargets/testSpotTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testLogic/testGameelements/testTargets/testSpotTarget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testLogic/testGameelements/testTargets/testTargets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testLogic/testGameelements/testTargets/testTargets.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testLogic/testTable/testGameTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testLogic/testTable/testGameTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testLogic/testTable/testGeneralTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testLogic/testTable/testGeneralTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/imgs/pinbalBG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testLogic/testTable/testGeneralTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testLogic/testTable/testNullTable.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -76,21 +27,37 @@
     <SUITE FILE_PATH="coverage/pinball$testGame_testGetersSeed.ic" NAME="testGame.testGetersSeed Coverage Results" MODIFIED="1527644636743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>testController.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/pinball$All_in_pinball.ic" NAME="All in pinball Coverage Results" MODIFIED="1531795183110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/pinball$All_in_pinball.ic" NAME="All in pinball Coverage Results" MODIFIED="1534720937630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/pinball$testController_in_pinball.ic" NAME="testController in pinball Coverage Results" MODIFIED="1527306252693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>testController.*</FILTER>
     </SUITE>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PinballApp.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gui/PinballApp.java">
+      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/logic/controller/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="519" column="44" selection-start-line="519" selection-start-column="44" selection-end-line="519" selection-end-column="44" />
+            <state relative-caret-position="519">
+              <caret line="198" column="5" lean-forward="true" selection-start-line="198" selection-start-column="5" selection-end-line="198" selection-end-column="5" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#4602#4603#0" expanded="true" />
+                <element signature="e#4646#4647#0" expanded="true" />
+                <element signature="e#4682#4683#0" expanded="true" />
+                <element signature="e#4729#4730#0" expanded="true" />
+                <element signature="e#4764#4765#0" expanded="true" />
+                <element signature="e#4809#4810#0" expanded="true" />
+                <element signature="e#4844#4845#0" expanded="true" />
+                <element signature="e#4889#4890#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testGame.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/testController/testGame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="253" column="35" selection-start-line="253" selection-start-column="35" selection-end-line="253" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -131,6 +98,9 @@
       <find>dropTarget</find>
       <find>upgra</find>
       <find>initBumpers</find>
+      <find>decreseDropp</find>
+      <find>ispl</find>
+      <find>trigger</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -139,22 +109,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/testLogic/testGameelements/testTargets/testDropTarget.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/gameelements/target/DropTarget.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testLogic/testGameelements/testTargets/testSpotTarget.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/gameelements/target/SpotTarget.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/gameelements/target/AbstractTarget.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/table/NullGameTable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/table/Table.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorDropTarget.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorKickerBumper.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorPopBumper.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorSpotTarget.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorResetDropTarget.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorDropTargetBonus.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorExtraBallBonus.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/visitor/VisitorJackPotBonus.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/table/GameTable.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/gui/BarComponent.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/StaticsMethods.java" />
@@ -171,7 +131,6 @@
         <option value="$PROJECT_DIR$/src/main/java/gameLogic/logic/controller/Igame.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/SpotTargetComponent.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/DropTargetComponent.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testController/testGame.java" />
         <option value="$PROJECT_DIR$/src/test/java/testLogic/testTable/testGeneralTable.java" />
         <option value="$PROJECT_DIR$/src/test/java/BigTestT2.java" />
         <option value="$PROJECT_DIR$/src/main/java/gameLogic/logic/bonus/JackPotBonus.java" />
@@ -190,6 +149,17 @@
         <option value="$PROJECT_DIR$/src/main/java/gui/PopBumperComponent.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/KickerBumperComponent.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/PinballApp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/logic/bonus/AbstractBonus.java" />
+        <option value="$PROJECT_DIR$/src/main/java/logic/table/NullGameTable.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testLogic/testTable/testNullTable.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testLogic/testTable/testGameTable.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testLogic/testBonus/testDropTargetBonus.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testLogic/testBonus/testJackPotBonus.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testController/testNullGame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/logic/table/GameTable.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testController/testVisitor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/logic/controller/Game.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testController/testGame.java" />
       </list>
     </option>
   </component>
@@ -247,15 +217,26 @@
               <item name="cc3002-pinball" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="logic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pinball" type="b2602c69:ProjectViewProjectNode" />
               <item name="cc3002-pinball" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="sounds" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="logic" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinball" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cc3002-pinball" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="logic" type="462c0819:PsiDirectoryNode" />
+              <item name="table" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pinball" type="b2602c69:ProjectViewProjectNode" />
@@ -269,6 +250,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pinball" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cc3002-pinball" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="testController" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pinball" type="b2602c69:ProjectViewProjectNode" />
@@ -328,18 +317,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PinballApp">
-    <configuration name="PinballApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.PinballApp" />
-      <module name="pinball" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="gui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
+  <component name="RunManager" selected="JUnit.All in pinball">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -351,40 +329,6 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="BigTestT2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pinball" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BigTestT2" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="BigTestT2.testJackPotBonus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pinball" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BigTestT2" />
-      <option name="METHOD_NAME" value="testJackPotBonus" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -410,7 +354,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="testGame.testIsPlayableTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="testGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pinball" />
       <extension name="coverage">
         <pattern>
@@ -422,7 +366,76 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="testController" />
       <option name="MAIN_CLASS_NAME" value="testController.testGame" />
-      <option name="METHOD_NAME" value="testIsPlayableTable" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="testGame.testNewFeatures" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pinball" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testController.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="testController" />
+      <option name="MAIN_CLASS_NAME" value="testController.testGame" />
+      <option name="METHOD_NAME" value="testNewFeatures" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="testJackPotBonus.testTimesTriggered" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pinball" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testLogic.testBonus.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="testLogic.testBonus" />
+      <option name="MAIN_CLASS_NAME" value="testLogic.testBonus.testJackPotBonus" />
+      <option name="METHOD_NAME" value="testTimesTriggered" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="testNullGame.testNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pinball" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testController.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="testController" />
+      <option name="MAIN_CLASS_NAME" value="testController.testNullGame" />
+      <option name="METHOD_NAME" value="testNull" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -456,19 +469,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.PinballApp" />
       <item itemvalue="JUnit.All in pinball" />
-      <item itemvalue="JUnit.testGame.testIsPlayableTable" />
-      <item itemvalue="JUnit.BigTestT2.testJackPotBonus" />
-      <item itemvalue="JUnit.BigTestT2" />
+      <item itemvalue="JUnit.testJackPotBonus.testTimesTriggered" />
+      <item itemvalue="JUnit.testNullGame.testNull" />
+      <item itemvalue="JUnit.testGame" />
+      <item itemvalue="JUnit.testGame.testNewFeatures" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PinballApp" />
-        <item itemvalue="JUnit.BigTestT2" />
         <item itemvalue="JUnit.All in pinball" />
-        <item itemvalue="JUnit.BigTestT2.testJackPotBonus" />
-        <item itemvalue="JUnit.testGame.testIsPlayableTable" />
+        <item itemvalue="JUnit.testGame.testNewFeatures" />
+        <item itemvalue="JUnit.testGame" />
+        <item itemvalue="JUnit.testNullGame.testNull" />
+        <item itemvalue="JUnit.testJackPotBonus.testTimesTriggered" />
       </list>
     </recent_temporary>
   </component>
@@ -500,44 +513,44 @@
       <workItem from="1534123762335" duration="135000" />
       <workItem from="1534126571792" duration="7029000" />
       <workItem from="1534539807711" duration="458000" />
-      <workItem from="1534711735121" duration="3329000" />
+      <workItem from="1534711735121" duration="8545000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_pinball - 2018.08.11 at 17h 47m 00s.xml">
+    <history-entry file="testGame - 2018.08.19 at 20h 11m 05s.xml">
+      <configuration name="testGame" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testGame - 2018.08.19 at 20h 11m 32s.xml">
+      <configuration name="testGame" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testGame - 2018.08.19 at 20h 12m 32s.xml">
+      <configuration name="testGame" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testGame - 2018.08.19 at 20h 13m 05s.xml">
+      <configuration name="testGame" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_pinball - 2018.08.19 at 20h 14m 56s.xml">
       <configuration name="All in pinball" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BigTestT2_testJackPotBonus - 2018.08.11 at 17h 53m 18s.xml">
-      <configuration name="BigTestT2.testJackPotBonus" configurationId="JUnit" />
+    <history-entry file="testGame_testNewFeatures - 2018.08.19 at 20h 15m 29s.xml">
+      <configuration name="testGame.testNewFeatures" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BigTestT2_testJackPotBonus - 2018.08.11 at 17h 53m 36s.xml">
-      <configuration name="BigTestT2.testJackPotBonus" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_pinball - 2018.08.11 at 17h 56m 55s.xml">
+    <history-entry file="All_in_pinball - 2018.08.19 at 20h 15m 39s.xml">
       <configuration name="All in pinball" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_pinball - 2018.08.12 at 23h 43m 41s.xml">
+    <history-entry file="All_in_pinball - 2018.08.19 at 20h 15m 44s.xml">
       <configuration name="All in pinball" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_pinball - 2018.08.12 at 23h 44m 36s.xml">
+    <history-entry file="All_in_pinball - 2018.08.19 at 20h 16m 33s.xml">
       <configuration name="All in pinball" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_pinball - 2018.08.12 at 23h 46m 27s.xml">
+    <history-entry file="All_in_pinball - 2018.08.19 at 20h 19m 18s.xml">
       <configuration name="All in pinball" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_pinball - 2018.08.12 at 23h 47m 08s.xml">
-      <configuration name="All in pinball" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BigTestT2 - 2018.08.19 at 18h 32m 07s.xml">
-      <configuration name="BigTestT2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BigTestT2 - 2018.08.19 at 18h 42m 52s.xml">
-      <configuration name="BigTestT2" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="200470000" />
+    <option name="totallyTimeSpent" value="205686000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -553,11 +566,12 @@
       <window_info anchor="right" id="Maven Projects" order="1" />
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="3" />
-      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49853587" weight="0.3290938" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49853587" visible="true" weight="0.3290938" />
+      <window_info active="true" anchor="right" id="Coverage" order="5" side_tool="true" visible="true" weight="0.25768667" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.24670571" />
+      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.21449487" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.3290938" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
@@ -566,7 +580,6 @@
       <window_info anchor="right" id="Theme Preview" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.3990461" />
-      <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.25768667" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
@@ -586,62 +599,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/Bumper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testLogic/testGameelements/testTargets/testDropTarget.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="47" lean-forward="true" selection-start-column="47" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testLogic/testGameelements/testTargets/testSpotTarget.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/gameelements/target/Target.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/gameelements/Hittable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/controller/visitor/Visitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="7" selection-start-line="7" selection-end-line="12" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/controller/visitor/VisitorKickerBumper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="59" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/Runnable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
@@ -699,38 +656,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/bonus/AbstractBonus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/logic/controller/visitor/VisitorExtraBallBonus.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testLogic/testBonus/testDropTargetBonus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testController/testGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testLogic/testTable/testGeneralTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -797,13 +726,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/controller/visitor/VisitorResetSpotTarget.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="53" lean-forward="true" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/logic/gameelements/target/SpotTarget.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -853,20 +775,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/table/NullGameTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/controller/nullGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1513">
-          <caret line="126" column="49" selection-start-line="126" selection-start-column="49" selection-end-line="126" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/logic/controller/IGame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
@@ -878,34 +786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/table/GameTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="204" column="33" lean-forward="true" selection-start-line="204" selection-start-column="33" selection-end-line="204" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/AbstractBumper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1014">
-          <caret line="101" column="9" lean-forward="true" selection-start-line="101" selection-start-column="9" selection-end-line="101" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/controller/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/bonus/DropTargetBonus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
@@ -935,11 +815,175 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/PinballApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="519" column="44" selection-start-line="519" selection-start-column="44" selection-end-line="519" selection-end-column="44" />
+        <state relative-caret-position="108">
+          <caret line="537" column="54" selection-start-line="537" selection-start-column="54" selection-end-line="537" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/table/NullGameTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-175">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/logic">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>logic</OriginalElement>
+          <nodes>
+            <node x="" y="">logic.table</node>
+            <node x="" y="">logic.gameelements</node>
+            <node x="" y="">logic.controller</node>
+            <node x="" y="">logic.bonus</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="131.0" y="88.5" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testLogic/testTable/testGameTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="68" column="22" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testLogic/testTable/testNullTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="61" column="47" lean-forward="true" selection-start-line="61" selection-start-column="47" selection-end-line="61" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/gameelements/bumper/AbstractBumper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="101" column="9" lean-forward="true" selection-start-line="101" selection-start-column="9" selection-end-line="101" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/bonus/DropTargetBonus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testLogic/testBonus/testExtraBallBonus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/bonus/AbstractBonus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testLogic/testBonus/testDropTargetBonus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testLogic/testBonus/testJackPotBonus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="30" column="95" selection-start-line="30" selection-start-column="95" selection-end-line="30" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/controller/nullGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-991">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <folding>
+            <element signature="e#425#426#0" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testController/testNullGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/controller/visitor/VisitorResetSpotTarget.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="53" lean-forward="true" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/controller/visitor/Visitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-575">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testController/testVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="333" selection-start-line="333" selection-end-line="333" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/table/GameTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="237" column="12" selection-start-line="237" selection-start-column="12" selection-end-line="237" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/controller/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="198" column="5" lean-forward="true" selection-start-line="198" selection-start-column="5" selection-end-line="198" selection-end-column="5" />
+          <folding>
+            <element signature="e#4602#4603#0" expanded="true" />
+            <element signature="e#4646#4647#0" expanded="true" />
+            <element signature="e#4682#4683#0" expanded="true" />
+            <element signature="e#4729#4730#0" expanded="true" />
+            <element signature="e#4764#4765#0" expanded="true" />
+            <element signature="e#4809#4810#0" expanded="true" />
+            <element signature="e#4844#4845#0" expanded="true" />
+            <element signature="e#4889#4890#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testController/testGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="253" column="35" selection-start-line="253" selection-start-column="35" selection-end-line="253" selection-end-column="35" />
         </state>
       </provider>
     </entry>
