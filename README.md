@@ -18,6 +18,33 @@ usarse git clone desde github).
 luego abrir inteliJ, ir a file->open y ahi buscar la carpeta en el arbol de carpetas.
 de esta forma el projecto sera importado a inteliJ y podra editarse.
 
+para probar la aplicacion, debe ir al archivo gui, y correr PinballAp.
+
+##Features
+Mayores:
+
+1) estado distinto: los bumpers cambian de color y tamano cuando son mejorados, y vuelven a su 
+tamano original una vez que se acaba el upgrade.
+
+los targets por su parte simulan que an sido derribados, cambiando su tamano.
+
+2)sonido al golpe: se agrego un sonido a los bumpers y los targes, cada vez que son golpeados
+por la pelota
+
+3)mesa manual:
+es posible crear una mesa manual, antes de empezar a jugar (o tambien mientras se juega)
+para esto es necesario ingresar los valores que se piden en la pantalla, y luego apretar 
+el boton "create".
+
+Menores:
+
+flipers distintos: los flipers se mueven por separado
+
+##como jugar
+
+se crea una nueva mesa ingresando los valores que se piden (o sino se crea una mesa por default)
+luego se apreta el boton "create" y con la tecla "b", se sueltan las bolas en la pantalla.
+
 
 ## Tests
 

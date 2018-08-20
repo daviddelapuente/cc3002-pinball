@@ -19,7 +19,7 @@ import java.util.Observer;
  *
  * @author David de la puente
  */
-public class Game implements Observer,IGame{
+public class Game implements IGame,Observer {
     private Table table;
     private Bonus dropTargetBonus;
     private ExtraBallBonus extraBallBonus;
